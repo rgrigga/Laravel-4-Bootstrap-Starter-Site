@@ -1,5 +1,9 @@
 <?php
 
+// find tutorial content at https://tutsplus.com/lesson/the-absolute-basics/
+// also http://myapp.gristech.com/admin/blogs/41
+// 
+// 
 return array(
 
 	/*
@@ -42,6 +46,7 @@ return array(
 	*/
 
 	'port' => 2525,
+	// gmail: 587?
 
 	/*
 	|--------------------------------------------------------------------------

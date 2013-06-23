@@ -17,14 +17,16 @@
 	<li><a href="https://developers.google.com/drive/quickstart-php">Google Drive API</a></li>
 	<li>"We will not post junk on your FB wall! Or intrude in your life any way you don't want us to!"</li>
 	<li><a href="https://www.google.com/webmasters/tools/data-highlighter?hl=en&siteUrl=http://gristech.com/"></a>google webmasters</li>
+	<li><a href="https://github.com/php-loep">League of Extraordinary Packages</a></li>
+	<li>Unit Testing</li>
 </ul>
 
 <a href="https://support.google.com/drive/?hl=en#topic=2799627">https://support.google.com/drive/?hl=en#topic=2799627</a>
 
 
 <?php
-$monolog = Log::getMonolog();
-var_dump($monolog);
+// $monolog = Log::getMonolog();
+// var_dump($monolog);
 
 ?>
 

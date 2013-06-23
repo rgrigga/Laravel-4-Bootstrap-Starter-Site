@@ -86,8 +86,9 @@ class AdminBlogsController extends AdminController {
         // Declare the rules for the form validation
         $rules = array(
             'title'   => 'required|min:3',
-            'content' => 'required|min:3',
-            'image' => 'required|min:3'
+            'content' => 'required|min:3'
+            // ,
+            // 'image' => 'required|min:3'
         );
 
         // Validate the inputs

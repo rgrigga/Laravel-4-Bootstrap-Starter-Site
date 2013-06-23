@@ -224,7 +224,8 @@ h1, h2, h3 {
 }
 
 .foobar{
-    background-color: rgba(235,200,176,.5);
+    background-color: red;
+/*    background-color: rgba(235,200,176,.5);*/
     padding:5px; 
     /*margin-top: 40px; */
     margin-right: 20px;
@@ -232,6 +233,8 @@ h1, h2, h3 {
     border-bottom-right-radius:20px;
     text-align: center;
 }
+
+
 /*from the bootstrap docs:*/
     /* Large desktop */
     @media (min-width: 1200px) { 
@@ -292,13 +295,23 @@ background-color: red;
             .hotel{
                 background-color: green;
             }
+
+            .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+            padding: 5px;
+            padding-left: 40px;
+            }
          }
      
     /* Landscape phones and down */
     @media (max-width: 480px) { 
-                .hotel{
+            .hotel{
                 background-color: orange;
             }
+            
+/*            .navbar-inner{
+                padding-left: 50px;
+            }*/
+
         }
 
 

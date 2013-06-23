@@ -187,11 +187,11 @@ background-color: red;
                 color:red;
 
             }*/
-            .navbar-fixed-top {
-                /*margin-bottom: 0px;*/
-            }
+/*
+
+ */
             .jumbotron{
-              margin-top: -20px;
+              margin-top: -40px;
               z-index: -3;
             }
 
@@ -405,9 +405,9 @@ only screen and ( -o-min-device-pixel-ratio: 2/1) {
   padding-right: 0px;
 }*/
 
-.navbar-fixed-top {
-    /*margin-bottom: 0px;*/
-  }
+/*.navbar-fixed-top {
+    margin-bottom: 0px;
+  }*/
 
 .jumbotron{
   .margin-left: -20px;

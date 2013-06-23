@@ -31,12 +31,15 @@
 		<![endif]-->
 
 <!-- prettify -->
+
+<!-- NOTE: I had an experience with a lengthy pageload on this today.  It's a good lesson NOT to include prettify on the main layout page -->
+
 <!-- <link href="prettify.css" type="text/css" rel="stylesheet" /> -->
 <script type="text/javascript" src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?&amp;skin=sunburst&amp;lang=css"></script>
 
 <!-- font-awesome -->
 <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
-<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
 
 		<!-- Favicons
 		================================================== -->
@@ -74,9 +77,24 @@
 			<div class="navbar-inner">
 				<div class="container-fluid">
 
-@include('site.partials.contact')
 
+
+
+<!-- search -->
+
+<!-- search -->
+
+
+<!-- <form action="{{ URL::to('tags') }}"> -->
+<!-- action="" -->
+
+
+<!-- <form class="navbar-search" action="/tags" method='get'> -->
+
+<!-- </form> -->
 <!-- //moved -->
+<!-- </form> -->
+
 <!-- 					<div class="pull-right">
 						<a href="http://facebook.com" class="social-icon">
 					    	<img src="http://gristech.com/img/facebook.png" class="img-circle">
@@ -93,12 +111,15 @@
 					</div> -->
 
 					<a class="btn btn-navbar pull-left" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<!-- <div class="text-center">foo</div> -->
+						<i class="icon-collapse icon-2x"></i>
+<!-- 						<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+						<span class="icon-bar"></span> -->
 					</a>
 
 					<div class="nav-collapse collapse">
+						
 						<ul class="nav">
 							<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('') }}}">Home</a></li>
 							<li {{ (Request::is('technical') ? ' class="active"' : '') }}><a href="{{{ URL::to('/technical') }}}">Technical</a></li>
@@ -108,6 +129,8 @@
 
 						<!-- admin/user nav -->
                         <ul class="nav pull-right">
+							
+
                             @if (Auth::check())
                                 @if (Auth::user()->hasRole('admin'))
 
@@ -121,6 +144,7 @@
 	                            <li {{ (Request::is('user/login') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/login') }}}">Login</a></li>
 	                            <li {{ (Request::is('user/register') ? ' class="active"' : '') }}><a href="{{{ URL::to('user/create') }}}">Join (Free)</a></li>
                             @endif
+                            @include('site.partials.contact')
                         </ul>
 					</div>
 					<!-- ./ nav-collapse -->
@@ -186,6 +210,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, cumque pr
 <!-- container -->
 
 	        <p class="muted credit">This site began as the Laravel 4 Starter Site on <a href="https://github.com/andrew13/Laravel-4-Bootstrap-Starter-Site">Github</a>.  Thank you Andrew!</p>
+
 	      
 <span><a href="http://en.wikipedia.org/wiki/Perpetual_beta">Always Beta</a></span>
 
@@ -196,9 +221,14 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, cumque pr
 	    </div>
 
 <a href="/whyresponsive">
+
+
+
 <div class="hotel hotelb">
 <!-- 	<div style="color:black; padding-bottom:50px;">resize me</div> -->
+
 	<div class="hotel pull-right">
+
 		<div class="visible-phone">
 			
 			<i class="icon-mobile-phone icon-4x"></i>

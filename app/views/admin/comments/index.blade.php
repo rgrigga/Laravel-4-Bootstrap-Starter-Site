@@ -2,7 +2,7 @@
 
 {{-- Web site Title --}}
 @section('title')
-Blog Comment Management ::
+BAM!
 @parent
 @stop
 
@@ -10,7 +10,7 @@ Blog Comment Management ::
 @section('content')
 <div class="page-header">
 	<h3>
-		Blog Comment Management
+		BAM Blog Comment Management
 	</h3>
 </div>
 

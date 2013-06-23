@@ -9,9 +9,9 @@
 			Buckeye Mower : Mobile Lawn Mower Repair, Small Engine Service
 			@show
 		</title>
-		<meta name="keywords" content="mower repair, mower service" />
+		<meta name="keywords" content="lawnmower repair, mower repair, john deere, push mower, small engine, riding mower, mower service, columbus, ohio" />
 		<meta name="author" content="Ryan Grissinger" />
-		<meta name="description" content="Lawn Mower Repair, Small Engine Repair, more." />
+		<meta name="description" content="Buckeye Mower serves the Greater Columbus Area" />
 
 		<!-- Mobile Specific Metas
 		================================================== -->
@@ -65,34 +65,84 @@
 
 		<!-- To make sticky footer need to wrap in a div -->
 		<div id="wrap">
+<style>
+.foobar{
+    background-color: red;
+/*    background-color: rgba(235,200,176,.5);*/
+    padding:5px; 
+    /*margin-top: 40px; */
+    margin-right: 20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    text-align: center;
+}
 
+
+.india{
+    position:fixed; right:0;
+    background-color: rgba(235,200,176,.5);
+    /*padding:10px; */
+    line-height: 300px;
+    margin-top: -120px; 
+    /*margin-right: -20px;*/
+    width: 200px;
+    height:200px;
+    /*border-top:50px;*/
+    border-radius: 50%;
+    /*border-bottom-left-radius:50%;*/
+    /*border-bottom-right-radius:50%;*/
+    text-align: center;
+    z-index: 4;
+}
+.navbar{
+	position:fixed;
+	z-index: 5;
+}
+
+body {
+	padding-top: 40px;
+}
+
+    /* Landscape phones and down */
+    @media (max-width: 480px) { 
+            .hotel{
+                background-color: orange;
+            }
+            .navbar-inner{
+                padding-left: 50px;
+            }
+
+        }
+</style>
+	<div class="india pull-right">
+			<!-- <div>phone, email, chat, anything!</div> -->
+		<div>
+			<img src="http://gristech.com/img/contactus.png" alt="learn php laravel web design">
+		</div>
+	        
+	</div>
 		<!-- Navbar -->
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 
 				<div class="container-fluid">
 
-<div class="brand">Buckeye Mower Repair</div>
-					
-
+<div class="brand">Buckeye Mower</div>
 					<a class="btn btn-navbar pull-right" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
 
-					@include('site.partials.contact')
+					
 					
 					<div class="nav-collapse collapse">
+						@include('site.partials.contact')
 						<ul class="nav">
-							<li></li>
-							<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('/russ') }}}">Home</a></li>
-							<li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('diy') }}}">DIY</a></li>
 							
-
-			              	
-			                  
-							<!-- </ul> -->
+							<li {{ (Request::is('russ*') ? ' class="active"' : '') }}><a href="{{{ URL::to('/russ') }}}">Home</a></li>
+							<!-- <li {{ (Request::is('/') ? ' class="active"' : '') }}><a href="{{{ URL::to('diy') }}}">DIY</a></li>  -->   
+						</ul>
 
 			                        <ul class="nav pull-right">
 			                            @if (Auth::check())
@@ -115,15 +165,20 @@
 				
 				</div>
 			</div>
+
 		</div>
 
 		<!-- ./ navbar -->
-<div class="foobar pull-right">
+
+<!-- <div class="foobar pull-right">
+
+
+
 		<div>phone, email, chat, anything!</div>
 		<div><img src="http://gristech.com/img/contactus.png" alt="buckeye mower"></div>
         <span>Whatever works for you.</span>
         
-</div>
+</div> -->
 		<!-- Container -->
 		<div class="container-fluid">
 			<!-- Notifications -->
@@ -156,24 +211,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, cumque pr
 
 	      </div>
 
-<a href="/why-responsive">
-<div class="hotel hotelb">
-<!-- 	<div style="color:black; padding-bottom:50px;">resize me</div> -->
-	<div class="hotel pull-right">
-		<div class="visible-phone">
-			
-			<i class="icon-mobile-phone icon-4x"></i>
-		</div>
-		<div class="visible-tablet">
 
-			<i class="icon-tablet icon-4x"></i>
-		</div>
-			<div class="visible-desktop">
-			<i class="icon-desktop icon-4x"></i>
-		</div>
-	</div>
-</div>
-</a>
 	    </div>
 
 		<!-- Javascripts

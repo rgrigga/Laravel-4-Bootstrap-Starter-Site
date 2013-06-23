@@ -11,6 +11,14 @@
 <div class="page-header">
 	<h1>Login into your account</h1>
 </div>
+<div class="span4 pull-right">
+    <ul>
+        <li>Company Name</li>
+        <li>Company Logo</li>
+        <li>Custom Content</li>
+        <li>Advertising</li>
+    </ul>
+</div>
 <form method="POST" action="{{ URL::to('user/login') }}" accept-charset="UTF-8">
     <input type="hidden" name="_token" value="{{ csrf_token() }}">
     <fieldset>

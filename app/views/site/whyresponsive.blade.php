@@ -16,6 +16,8 @@
 <h1>Contact Us</h1>
 <!-- </div> -->
 
+<a href="https://gristech.hipchat.com/chat">https://gristech.hipchat.com/chat</a>
 
+Try this: <a href="http://www.pixelscapes.com/spatulacity/button.htm">Resposnsive Website from 1993.</a>
 				    
 @stop

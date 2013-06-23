@@ -14,7 +14,17 @@
 	
 </ul>
 
+<h3>Coming soon...</h3>
+<ul class="tag">
+	<li><i class="icon-tag"></i></li>
+	<?php
 
+		foreach ($tags as $mytag) {
+			echo "<li><a href='/tags/$mytag'>$mytag</a></li>";
+		}
+
+	?>
+</ul>
 
 <!-- 	<li><a href="101">101</a></li>
 

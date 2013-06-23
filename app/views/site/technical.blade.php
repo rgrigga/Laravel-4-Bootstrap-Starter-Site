@@ -30,7 +30,7 @@
 <div class="jumbotron masthead">
 
 
-	<h1>Tools<small> building blocks for this site include:</small></h1>
+	<h1>My Tools!<small> building blocks for this site include:</small></h1>
 	<!-- <h2>blah</h2> -->
 	<img src="http://gristech.com/img/mini-tools.jpg" alt="">
 	<!-- <p>If you're interested...</p> -->
@@ -137,11 +137,13 @@ p.photocredit {
 						</h4>
 						</a>
 						<h2>PHP Framework</h2>
+						<p>Laravel is an implementation of PHP.  The result of tens of thousands of hours of community effort.  I think of a framework doing for programming what an assembly line does for manufacturing.  A framework has tons of functionality built into it, and a </p>
 						<ul>
 							<li>Eloquent ORM</li>
 							<li>Artisan CLI</li>
 							<li>Polymorphic Relations</li>
 							<li>Eager Loading</li>
+							<li><a href="http://vschart.com/compare/laravel/vs/ruby-on-rails">Laravel vs. Rails</a></li>
 						</ul>
 						<!-- <p>The best thing since sliced bread.</p> -->
 						<a href="http://laravel.com/docs/requests#old-input"><p class="photocredit">http://laravel.com/docs/requests#old-input</p></a>
@@ -183,6 +185,7 @@ p.photocredit {
 						<p class="photocredit"><a href="http://opensource.org/">logo &copy; opensource.org</a></p>
 						<h6>Free (as in freedom)</h6>
 						<h6>Free (as in free beer)</h6>
+						<h6><a href="http://opensource.org/licenses/MIT">MIT License</a></h6>
 						<p>The best thing since sliced bread.</p>
 		      		</div>
 
@@ -196,12 +199,16 @@ p.photocredit {
 						<ul>
 							<li>lorempixum</li>
 							<li><a href="http://www.flickr.com/creativecommons/">flickr</a></li>
-							<li>other creative commons resources</li>
+							<li><a href="http://www.kozzi.com/?ref=146452">Kozzi</a></li>
+							<li><a href="http://www.deviantart.com/"></a>deviantart</li>
+							<li><a href="http://search.creativecommons.org/">Creative Commons</a></li>
+							<li><a href="http://pixabay.com/en/rome-italy-fontana-statue-statues-107889/">pixabay</a></li>
 							<li><a href="http://yourbusiness.azcentral.com/give-copyright-credit-images-2791.html">About copyrighting</a></li>
 						</ul>
 
 						<!-- http://yourbusiness.azcentral.com/give-copyright-credit-images-2791.html -->
 		      		</div>
+
 
 
 		      		<div class="span4 thumbnail delta">
@@ -210,9 +217,58 @@ p.photocredit {
 						<h4><span>Sublime Text</span></h4>
 						</a>
 						<h6>It's Awesome</h6>
+						<p>You can use it for free for a while, but DBAD.</p>
+						<h5>$70</h5>
+						<p>You also need <a href="http://wbond.net/sublime_packages/sftp">SFTP</a> $16.</p>
+
+		      		</div>
+
+		      		<div class="span4 thumbnail delta">
+		      			<a href="http://www.inkscape.com/">
+		      			<img src="http://www.gristech.com/img/screen/inkscape.png" alt="Inkscape">
+						<h4><span>Inkscape</span></h4>
+						</a>
+						<h6>Vector Images</h6>
+						<p>The best thing since sliced bread.</p>
+						<ul>
+							<li><a href="http://inkscapetutorials.wordpress.com/">tutorials</a></li>
+							<li><a href="">Download</a></li>
+						</ul>
+		      		</div>
+
+		      		<div class="span4 thumbnail delta">
+		      			<a href="http://fortawesome.github.io/Font-Awesome/">
+		      			<img src="http://www.gristech.com/img/screen/font-awesome.png" alt="Sublime Text">
+						<!-- <h4><span><i class="icon-font-awesome"></i>Font Awesome</span></h4> -->
+						</a>
+						<h6>It's Awesome (seriously!)</h6>
+						<p>Version 3.2.0 - 6/13/2013</p>
+						<ul>
+							<li><i class="icon-beer"></i> Free! <a href="http://opensource.org/licenses/mit-license.html"> MIT License</a></li>
+						</ul>
+						<i class="icon-android"></i>
+						<i class="icon-thumbs-up"></i>
+						<i class="icon-file"></i>
+						<i class="icon-comments-alt"></i>
+						<p>The best thing since sliced bread.</p>
+		      		</div>
+
+
+		      		<div class="span4 thumbnail delta">
+		      			<a href="http://bootswatch.com/">
+		      			<img src="http://www.gristech.com/img/screen/bootswatch.png" alt="Bootswatch">
+						<h4><span><i class="icon-font-awesome"></i>Bootswatch</span></h4>
+						</a>
+						<h6>It's Awesome</h6>
+<!-- 						<ul>
+							<li><a href="http://opensource.org/licenses/mit-license.html"><i class="icon-beer"></i>Free: MIT License</a></li>
+						</ul> -->
 						<p>The best thing since sliced bread.</p>
 		      		</div>
 				</div>
+
+
+				
 				<!-- ./ span10 -->
 
 				<!-- sidebar -->
@@ -228,6 +284,7 @@ p.photocredit {
 	      			<a href="http://www.siteground.com" onClick="this.href='http://www.siteground.com/index.htm?afbannercode=090922b4e36a794ded5eb252b703ad39'" ><img  src="https://ua.siteground.com/img/banners/general/blue/120x600.gif" alt="Web Hosting" width="120" height="600" border="0"></a>
 	      			</div>
 	      		</div>
+	
 
 
 
@@ -239,6 +296,16 @@ p.photocredit {
 					<!-- Tagged -->  
 					<!-- <img src="http://www.lorempixum.com/g/400/100/nature" alt="" /> -->
 		</div>
+
+<div class="span12">
+	<h3>some great things about Laravel</h3>
+	<ul>
+		<li>artisan</li>
+		<li>Eloquent</li>
+		<li>swiftmailer</li>
+		<li>symfony components</li>
+	</ul>
+</div>
 
 
 

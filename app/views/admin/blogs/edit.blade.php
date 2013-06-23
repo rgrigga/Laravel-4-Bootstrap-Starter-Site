@@ -9,15 +9,38 @@ Blog Post Update ::
 {{-- Content --}}
 @section('content')
 
-<div class="page-header">
-	<h3>
-		Blog Management
 
-		<div class="pull-right">
-			<a href="{{{ URL::to('admin/blogs/create') }}}" class="btn btn-small btn-info"><i class="icon-plus-sign icon-white"></i> Create</a>
-		</div>
-	</h3>
-</div>
+<div class="page-header">
+					<h3>
+						Blog Management
+
+						<div class="pull-right">
+							<a href="{{{ URL::to('admin/blogs/create') }}}" class="btn btn-small btn-info"><i class="icon-plus-sign icon-white"></i> Create</a>
+						</div>
+					</h3>
+					<h4>
+						<em>Title: </em>{{{ $post->title }}}
+					</h4>
+					<h5>
+						<em>Link: </em><a href="{{{ URL::to('blog/'.$post->slug) }}}">{{{ URL::to('blog/'.$post->slug) }}}</a>
+					</h5>
+
+
+
+					<ul class='tag'>
+						<li><i class="icon-tag"></i> tags:</li>
+						@foreach($post->tags() as $tag)
+				    <li>{{ $tag }}</li>
+					    
+					@endforeach
+					</ul>
+
+
+				</div>
+
+<div class="page-header">
+
+
 
 <!-- {{{ var_dump($post->tags()) }}} -->
 <style>
@@ -39,7 +62,7 @@ Blog Post Update ::
 
 
  <div class="accordion" id="accordion">
- 	<div class="accordion-group">
+<!--  	<div class="accordion-group">
  		<div class="accordion-heading">
  			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
  				<h3>
@@ -49,30 +72,13 @@ Blog Post Update ::
 					</h3>
  			</a>
  		</div>
- 		 		<!-- add class 'in' to the next div to expand on pageload -->
+ 		 		<!-- add class 'in' to the next div to expand on pageload ->
 
  		<div id="collapseOne" class="accordion-body collapse">
  			<div class="accordion-inner">
- 				<div class="page-header">
-					
-					<h4><em>Title: </em>{{{ $post->title }}}</h4>
-					<h5><em>Link: </em><a href="{{{ URL::to('blog/'.$post->slug) }}}">{{{ URL::to('blog/'.$post->slug) }}}</a></h5>
-
-
-
-						<ul class='tag'>
-							<li><i class="icon-tag"></i> tags:</li>
-					@foreach($post->tags() as $tag)
-
-					    <li>{{ $tag }}</li>
-					    
-					@endforeach
-					</ul>
-
-
-				</div>
+ 				
  			</div>
- 		</div>
+ 		</div> -->
  	</div>
  	<div class="accordion-group">
  		<div class="accordion-heading">
@@ -90,14 +96,18 @@ Blog Post Update ::
 				<div class="control-group {{{ $errors->has('meta-title') ? 'error' : '' }}}">
 					<label class="control-label" for="meta-title">Meta Title</label>
 					<div class="controls">
-						<input type="text" name="meta-title" id="meta-title" value="{{{ Input::old('meta-title', $post->meta_title) }}}" />
+						
+						<input type="text" name="meta-title" id="meta-title" 
+
+						value="{{{ Input::old('meta-title', $post->meta_title) }}}" />
 						{{{ $errors->first('meta-title', '<span class="help-inline">:message</span>') }}}
 					</div>
 				</div>
 				<!-- ./ meta title -->
 
 				<!-- Meta Description -->
-				<p>Meta Description is a 158 character summary of your post.  The Meta-Description may be displayed as the text for a google result, for example...</p>
+				<p><i class="icon-facebook"></i> Meta Description is a 158 character summary of your post.  The Meta-Description may be displayed as the text for a google result, for example...</p>
+				<p>It is also used on facebook</p>
 
 				<div class="control-group {{{ $errors->has('meta-description') ? 'error' : '' }}}">
 					

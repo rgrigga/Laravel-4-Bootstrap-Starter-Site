@@ -106,6 +106,8 @@ Route::controller('user', 'UserController');
 
 //:: Application Routes ::
 
+
+// STATIC PAGES: ///////////////////////////////////////////////////
 # Technical/Development Static Page
 
 Route::get('features', function()
@@ -126,6 +128,15 @@ Route::get('whyresponsive', function()
     return View::make('site/whyresponsive');
 });
 
+Route::get('notes', function()
+{
+    // Return about us page
+    return View::make('site/notes');
+});
+
+
+///////////////////////////////////////////////////////////////////////
+
 Route::get('russ', 'RussController@getIndex');
 Route::get('russ/{tag}', 'RussController@getIndex');
 // Route::get('tags/{tag}', 'BlogController@getIndex');
@@ -144,7 +155,9 @@ Route::get('blog', 'BlogController@getTags');
 Route::post('blog/{postSlug}', 'BlogController@postView');
 
 Route::get('tags', 'BlogController@getTags');
+Route::post('tags', 'BlogController@getTags');
 Route::get('tags/{tag}', 'BlogController@getIndex');
+// Route::post('tags/{tag}', 'BlogController@postIndex');
 
 # Posts - Second to last set, match slug
 Route::get('blog/{postSlug}', 'BlogController@getView');

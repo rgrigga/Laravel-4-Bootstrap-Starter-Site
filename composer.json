@@ -21,8 +21,7 @@
 	"require-dev": {
         
         "mockery/mockery": "dev-master@dev",
-        "summerstreet/woodling": "0.1.*",
-        "barryvdh/laravel-ide-helper": "dev-master"
+        "summerstreet/woodling": "0.1.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -46,8 +45,7 @@
 		],
 		"post-update-cmd": [
 			"php artisan optimize",
-			"php artisan clear-compiled",
-			"php artisan ide-helper:generate"
+			"php artisan clear-compiled"
 		]
 	},
 	"config": {
