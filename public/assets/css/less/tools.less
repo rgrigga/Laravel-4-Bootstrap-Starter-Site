@@ -1,0 +1,192 @@
+// no docs clearly explain to include this,
+// but it is necessary...
+// how frustrating!
+@import "/assets/less/bootstrap.less";
+
+// Oranges
+@carrot:#e67e22;
+@sunflower:#f1c40f;
+
+//Greys:
+@clouds: rgba(236, 240, 241,1.0);
+@silver:#bdc3c7;
+@concrete:#95a5a6;
+@asbestos:#7f8c8d;
+
+// Blues;
+@asphalt:#34495e;
+@midnight:rgba(44, 62, 80,1.0);
+@belize:#2980b9;
+@river:#3498db;
+
+
+@dark:@asbestos;
+@light:@silver;
+
+body{
+	// background-color: @silver;
+	// color:@clouds;
+}
+
+.thumbnail{
+	// background-color: @carrot;
+}
+
+  a:hover{
+    text-decoration: none;
+  }
+  a:hover i{
+    color: orange;    
+  }
+
+.active i.icon-folder-open{ display:inline-block; }
+.active i.icon-folder-close { display:none;}
+
+.inactive i.icon-folder-close{ display:inline-block; }
+.inactive i.icon-folder-open { display:none;}
+
+
+.contentwrap {
+	margin-top: 50px;
+  .make-row();
+}
+.content-main {
+	background-color: @sunflower;
+	.make-xs-column(8);
+	.make-md-column(9);
+}
+.content-secondary {
+	background-color: @carrot;
+  	
+ 	.make-xs-column(3);
+
+ 	.make-md-column(2);
+ 	.make-md-column-offset(1);
+}
+
+.admin-top{
+	background-color: @sunflower;
+}
+.admin-bottom{
+	background-color: @sunflower;
+}
+
+
+.posts{
+	.make-row();
+}
+.posts article{
+	background-color: @dark;
+	color:@light;
+}
+
+/*from the bootstrap docs:*/
+    /* Large desktop */
+  @media (min-width: 1200px) { 
+
+      .hotel{
+              background-color: yellow;
+              color:purple;
+
+      }
+
+      .hero-unit h1{
+          margin-top: 1em;
+          
+      }
+
+  }
+
+/*REALLY important!*/
+
+  @media (min-width: 980px){
+      .hero-unit{
+          margin-top:60px;
+      }
+      /*.foobar{*/
+          /*margin-top: 40px;*/
+      /*}*/
+
+
+  }
+
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 980px) and (max-width: 1199px) { 
+        .hotel{
+            background-color: blue;
+            color:orange;
+        }
+
+        /* body { 
+        background-color: red;
+                padding-top: 40px; }
+        you can't do this!
+                */
+    }
+
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 768px) and (max-width: 979px) { 
+    .hotel{
+        background-color: red;
+        color:green;
+    }
+/*                body { 
+background-color: red;
+    padding-top: 40px; }*/
+  }
+
+  /* up to desktop */
+  @media (max-width: 979px) { 
+/* 
+      .hotel{
+          background-color: green;
+          color:red;
+
+      }*/
+
+/*      .jumbotron{
+        margin-top: -20px;
+        z-index: -3;
+      }*/
+
+   }
+
+    @media (min-width: 480px) and (max-width: 979px) { 
+      .hotel{
+          background-color: green;
+          color:red;
+      }
+
+    .hotelb{
+          /*background-color: red;*/
+          height: 80px;
+          width: 60px;
+          border-top-left-radius:60px;
+      }
+
+    }
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) { 
+              
+        .modal{
+          width: 90%;
+          margin-left: 0px;
+        }
+
+        .hotel{
+            background-color: orange;
+            color:blue;
+        }
+
+        .hotelb{
+            /*background-color: red;*/
+            height: 60px;
+            width: 40px;
+            border-top-left-radius:60px;
+        }
+    }
+
+footer img{
+	max-height: 60px;
+}

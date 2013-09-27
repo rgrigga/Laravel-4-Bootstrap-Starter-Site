@@ -1,0 +1,402 @@
+
+@import "/assets/less/bootstrap.less";
+// @import "{{asset('assets/css/styles.css')}}";
+
+// Oranges
+@carrot:#e67e22;
+@sunflower:#f1c40f;
+
+//Greys:
+@clouds: rgba(236, 240, 241,1.0);
+@silver:#bdc3c7;
+@concrete:#95a5a6;
+@asbestos:#7f8c8d;
+
+// Blues;
+@asphalt:#34495e;
+@midnight:rgba(44, 62, 80,1.0);
+@belize:#2980b9;
+@river:#3498db;
+
+// @lightBlue:#ddd;
+@carrot:#e67e22;
+
+@lightRed:   #fdd;
+@lightGreen: #dfd;
+@lightBlue:  #ddf;
+ 
+@defaultThemeColor:@lightGreen;
+@borderColor:@defaultThemeColor - #333;
+
+@defaultRadius:30px;
+@defaultShapesWidth:200px;
+@borderSize:@defaultShapesWidth * 0.1;
+
+
+
+//////////////////////////////////
+// http://lesscss.org/#-mixins
+
+.border-radius (@radius: 15px) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.info{
+  padding: 15px;
+  background-color: @river;
+ .border-radius;
+}
+
+///////////////////////////////////
+
+html, body {
+     // background-color: @lightRed;
+    height: 100%;
+
+    /* The html and body elements cannot have 
+    any padding or margin, else they break other features */
+}
+
+.user-top{
+    .nav > li {
+      display: inline-block;
+    }
+}
+
+
+
+ul.tag{
+  
+  li {
+    background-color: @carrot;
+    display: inline-block;
+  }
+}
+
+nav{
+// didn't work...
+  // background-color: red;
+}
+footer{
+  background-color: blue;
+}
+
+.thumbnails{
+  list-style: none;
+}
+
+
+
+
+.theme1{
+  body{
+    background-color: @concrete;
+    // color: @clouds;
+  }
+  .content-wrap {
+    .make-row();
+  }
+  .content-main {
+    // background-color: @asphalt;
+    // color: @clouds;
+    // .make-xs-column(6);
+    .make-md-column(7);
+  }
+
+  .content-secondary {
+    // background-color: @sunflower;
+      
+    // .make-xs-column(6);
+
+    .make-md-column(5);
+    // .make-md-column-offset();
+    .border-radius;
+  }
+}
+
+.theme2{
+
+  body{
+    // background-color: @silver;
+    // color: @asphalt;
+  }
+  .content-wrap {
+    .make-row();
+  }
+  .content-main {
+        background-color: @concrete;
+    // background-color: @midnight;
+    .make-xs-column(7);
+    .make-md-column(8);
+    .border-radius;
+  }
+
+  .content-secondary {
+            background-color: @concrete;
+    color: @midnight;
+      .pull-right();
+    .make-xs-column(4);
+
+    .make-md-column(3);
+    .make-md-column-offset(1);
+    .border-radius;
+  }
+  .main > section{
+    color:@silver;
+  }
+}
+
+.wrapper{
+  .make-row();
+}
+.posts{
+  background-color: @sunflower;
+  .make-row();
+}
+
+.posts > article{
+  img {
+    max-width: 100%;
+  }
+  font-size: 20px;
+}
+
+.third{
+  background-color: @carrot;
+}
+.user-top{
+  background-color: @silver;
+  color: @asphalt;
+}
+
+
+.control-group{
+  border: 5px;
+  width: 100%;
+}
+ ///////////////////////////////////////////////////
+ // Definitions:;
+ //
+.shape{
+  border:@borderSize solid @borderColor;
+    display:inline-block;
+    width:200px;
+    height:200px;
+    background:@defaultThemeColor;
+    margin:20px;
+}
+
+ 
+.RoundedShape(@radius:@defaultRadius){
+    -webkit-border-radius:@radius;
+       -moz-border-radius:@radius;
+            border-radius:@radius;  
+}
+
+.Round{
+    .RoundedShape(9999px);
+}
+ 
+.RoundedSquare(@radius:@defaultRadius){
+    .RoundedShape(@radius);
+}
+
+.shape{
+    &:hover{ background:@lightRed;}
+
+}
+
+#shape1{
+  background-color:@lightBlue;
+    .Round;
+}
+#shape2{
+  background-color: @lightRed;
+    .RoundedSquare;
+}
+
+#shape3{
+  .RoundedSquare(60px);
+}
+
+
+.favicons{
+  .make-md-column(3);
+}
+
+
+img.thumby{
+  float:left;
+  height: 50px;
+}
+
+.accordion{
+  background-color: @asphalt;
+}
+
+/*http://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site*/
+
+.navbar-fixed-top {
+    position: fixed;
+    margin-bottom: 0px;
+    z-index: 10;
+    // li{
+
+    //   display: inline-block;
+    // }
+  }
+
+footer{
+  .make-row();
+}
+footer > section{
+  // background-color: red;
+  .make-md-column(4);
+}
+
+.fixed-bottom-right{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+      z-index: 10;
+}
+
+
+.hotel{
+    /*background-color: red;*/
+    position: fixed; 
+    /*height:60px;*/
+    bottom:0px;
+    right: 0px;
+    z-index: 5;
+    /*color: white;*/
+    padding: 5px;
+    opacity: .5;
+    border-top-left-radius:60px; 
+    text-align: right;
+}
+
+.hotelb{
+    /*background-color: red;*/
+    height: 100px;
+    width: 100px;
+    border-top-left-radius:100px;
+}
+
+/*from the bootstrap docs:*/
+    /* Large desktop */
+  @media (min-width: 1200px) { 
+
+      .hotel{
+              background-color: yellow;
+              color:purple;
+
+      }
+
+      .hero-unit h1{
+          margin-top: 1em;
+          
+      }
+
+  }
+
+/*REALLY important!*/
+
+  @media (min-width: 980px){
+      .hero-unit{
+          margin-top:60px;
+      }
+      /*.foobar{*/
+          /*margin-top: 40px;*/
+      /*}*/
+
+
+  }
+
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 980px) and (max-width: 1199px) { 
+        .hotel{
+            background-color: blue;
+            color:orange;
+        }
+
+        /* body { 
+        background-color: red;
+                padding-top: 40px; }
+        you can't do this!
+                */
+    }
+
+
+  /* Portrait tablet to landscape and desktop */
+  @media (min-width: 768px) and (max-width: 979px) { 
+    .hotel{
+        background-color: red;
+        color:green;
+    }
+/*                body { 
+background-color: red;
+    padding-top: 40px; }*/
+  }
+     
+
+
+
+  /* up to desktop */
+  @media (max-width: 979px) { 
+/*            .foobar{
+
+
+          margin-top: -20px;
+      }
+      .hotel{
+          background-color: green;
+          color:red;
+
+      }*/
+
+
+/*      .jumbotron{
+        margin-top: -20px;
+        z-index: -3;
+      }*/
+
+   }
+
+    @media (min-width: 480px) and (max-width: 979px) { 
+      .hotel{
+          background-color: green;
+          color:red;
+      }
+
+    .hotelb{
+          /*background-color: red;*/
+          height: 80px;
+          width: 60px;
+          border-top-left-radius:60px;
+      }
+
+    }
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) { 
+              
+        .modal{
+          width: 90%;
+          margin-left: 0px;
+        }
+
+        .hotel{
+            background-color: orange;
+            color:blue;
+        }
+
+        .hotelb{
+            /*background-color: red;*/
+            height: 60px;
+            width: 40px;
+            border-top-left-radius:60px;
+        }
+    }

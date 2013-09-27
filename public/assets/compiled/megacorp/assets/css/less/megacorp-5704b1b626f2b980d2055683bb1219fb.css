@@ -1,0 +1,66 @@
+@import /assets/less/bootstrap.less;
+table form {
+  margin-bottom: 0;
+}
+form ul {
+  margin-left: 0;
+  list-style: none;
+}
+.error {
+  color: red;
+  font-style: italic;
+}
+section,
+article,
+aside,
+footer,
+header,
+nav,
+hgroup {
+  display: block;
+}
+.alert {
+  position: relative;
+  margin-right: auto;
+  top: 80px;
+  z-index: 10;
+}
+.navwrap {
+  overflow: hidden;
+}
+body {
+  background-color: #7f8c8d;
+}
+.page-header {
+  width: 100%;
+}
+.thumbnail {
+  background-color: #3498db;
+}
+.active i.icon-folder-open {
+  display: inline-block;
+}
+.active i.icon-folder-close {
+  display: none;
+}
+.inactive i.icon-folder-close {
+  display: inline-block;
+}
+.inactive i.icon-folder-open {
+  display: none;
+}
+.content-wrap {
+  padding-top: 50px;
+}
+.content-main {
+  background-color: #ecf0f1;
+}
+.content-secondary {
+  background-color: #e67e22;
+}
+footer {
+  background-color: #34495e;
+}
+footer img {
+  max-height: 50px;
+}

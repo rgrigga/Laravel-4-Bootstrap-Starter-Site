@@ -1,0 +1,92 @@
+// no docs clearly explain to do this include anywhere, 
+// but it is necessary...
+// how frustrating!
+@import "/assets/less/bootstrap.less";
+
+        table form { margin-bottom: 0; }
+        form ul { margin-left: 0; list-style: none; }
+        .error { color: red; font-style: italic; }
+        /*body { padding-top: 20px; }*/
+
+        /*https://developer.mozilla.org/en-US/docs/Web/HTML/Sections_and_Outlines_of_an_HTML5_document*/
+        section, article, aside, footer, header, nav, hgroup {
+          display:block;
+        }
+        .alert {
+            position: relative;
+            margin-right: auto;
+            /*width: 100%;*/
+            top: 80px;
+            z-index: 10;
+        }
+        .navwrap{
+            overflow: hidden;
+        }
+
+// Oranges
+@carrot:#e67e22;
+@sunflower:#f1c40f;
+
+//Greys:
+@clouds: rgba(236, 240, 241,1.0);
+@silver:#bdc3c7;
+@concrete:#95a5a6;
+@asbestos:#7f8c8d;
+
+// Blues;
+@asphalt:#34495e;
+@midnight:rgba(44, 62, 80,1.0);
+@belize:#2980b9;
+@river:#3498db;
+
+@light:@silver;
+@dark:@midnight;
+
+body{
+	background-color: @asbestos;
+	color:@clouds;
+}
+
+.page-header{
+    width: 100%;
+    background-color: @clouds;
+    color:@river;
+}
+
+.thumbnail{
+	background-color: @river;
+}
+
+.active i.icon-folder-open{ display:inline-block; }
+.active i.icon-folder-close { display:none;}
+
+.inactive i.icon-folder-close{ display:inline-block; }
+.inactive i.icon-folder-open { display:none;}
+
+
+.content-wrap {
+    padding-top: 50px;
+  .make-row();
+}
+.content-main {
+	background-color: @light;
+    color: @dark;
+	.make-xs-column(6);
+	.make-md-column(8);
+}
+.content-secondary {
+	background-color: @dark;
+  	color: @light;
+ 	.make-xs-column(6);
+
+ 	.make-md-column(3);
+ 	.make-md-column-offset(1);
+}
+
+footer{
+    background-color: @asphalt;
+}
+footer img{
+    // max-width: 50px;
+    max-height: 50px;
+}

@@ -1,0 +1,357 @@
+html,
+body {
+    /*background-color: #DDC792;*/
+/*    background: url('http://gristech.com/img/screen/field.jpg') no-repeat center left fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+
+    /*width:100%;*/
+    height: 100%;
+
+    /* The html and body elements cannot have any padding or margin. */
+
+    /*http://stackoverflow.com/questions/11124777/twitter-bootstrap-navbar-fixed-top-overlapping-site*/
+
+    /*padding:0;*/
+}
+<<<<<<< HEAD
+/*http://colorschemedesigner.com/#3341Uw0w0w0w0*/
+=======
+>>>>>>> 0fb60f1021e1f0efddc9f11b7ed11f5781fc41a3
+
+body {
+    /*margin-left: 10px;*/
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by it's height */
+    margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+    height: 60px;
+}
+#footer {
+    background-color: #f5f5f5;
+}
+
+
+#wrap > .container {
+    padding-top: 60px;
+}
+.container .credit {
+    margin: 20px 0;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    #footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+iframe.wysihtml5-sandbox{
+    height:600px;
+}
+
+
+/* ///////////////////////////// */
+/*My Code*/
+
+/* Social Icons 
+----------------------------------------------- */
+
+a.social-icon {
+    margin-right: 5px; /*Adjust This Value As Needed*/
+/*    opacity: .7;
+    filter:alpha(opacity=70);*/
+}
+
+a.social-icon:hover {
+    opacity: .7;
+    filter:alpha(opacity=70);
+ /* For IE8 and earlier */
+}
+/*.navbar{
+    font-family: 'Kavoon', cursive;
+}*/
+
+/*bootstrap line 837*/
+
+/*notice that the img max-height is pretty important
+ if you want the carousel to look nice*/
+.carousel-inner>.item>img,.carousel-inner>.item>a>
+img{display:block;line-height:1;width:100%;max-height: 600px;}
+.carousel-caption>h1{
+    color:white;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+p{
+    /*min-height: parent -10px;*/
+}
+
+.featurette img{
+    max-width: 150px;
+    max-height: 150px;
+
+}
+
+.company{
+    /*font-size: 10em;*/
+    font-variant: italic;
+    font-weight: bold;
+    color: rgb(65,127,166);
+}
+
+.hero-unit img{
+    /*margin:30px;*/
+}
+    /*//http://www.flickr.com/photos/sanderovski/194647509/in/photolist-icBVx-9Y6WkJ-2xWTm-4WG9wN-2LvKPv-dGr62n-6JS3oD-5exCnW-4t88ux-4UmCs7-8xDDcA-9nXYw1-7uAqnv-4iLKHo-iQxNx-dzfKfd-2xj7r-2gnwox-7QeXbx-6LQkmb-6SLW2j-JiYn8-dR15HM-94ybt-PAGqn-8hwZCZ-6q7xUW-7FDGw-5Dzc4-8M2Ats-8enR4A-89yS3k-4AER7o-DKCpf-6cpStQ-deQSmW-9Qd6BD-wpAmJ-wpAuN-wpAvJ-cEwMFE-NoE2z-6312Wy-bVSrN9-9VddDJ-2AwiqL-dp7wPa-myd6X-6B2zaU-bDDuZ-8EBHpB/*/
+
+/*        background: url('http://gristech.com/img/screen/field.jpg') no-repeat center left fixed;
+        background-size: 100%;*/
+/*            -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+/*        width: 100%;
+        margin:0;
+        padding:0;*/
+    /*background-color: #DDC792;*/
+    /*opacity: .7;*/
+/*}*/
+
+.beta{
+    padding: 8px;
+    background-color: #FFF84C;
+}
+
+.charlie{
+    /*//http://www.flickr.com/photos/sanderovski/194647509/in/photolist-icBVx-9Y6WkJ-2xWTm-4WG9wN-2LvKPv-dGr62n-6JS3oD-5exCnW-4t88ux-4UmCs7-8xDDcA-9nXYw1-7uAqnv-4iLKHo-iQxNx-dzfKfd-2xj7r-2gnwox-7QeXbx-6LQkmb-6SLW2j-JiYn8-dR15HM-94ybt-PAGqn-8hwZCZ-6q7xUW-7FDGw-5Dzc4-8M2Ats-8enR4A-89yS3k-4AER7o-DKCpf-6cpStQ-deQSmW-9Qd6BD-wpAmJ-wpAuN-wpAvJ-cEwMFE-NoE2z-6312Wy-bVSrN9-9VddDJ-2AwiqL-dp7wPa-myd6X-6B2zaU-bDDuZ-8EBHpB/*/
+
+/*        background: url('http://gristech.com/img/large/backyard640.png') no-repeat center center fixed;
+        background-size: 100%;
+            -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+        /*width: 100%;*/
+        /*margin:0;*/
+    background-color: #DDC792;
+    /*opacity: .7;*/
+}
+
+.price{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.delta{
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(36,136,41,0.5);
+}
+.navbar-inverse{
+<<<<<<< HEAD
+    background-color: red;
+    height:200px;
+=======
+    background-color: green;
+>>>>>>> 0fb60f1021e1f0efddc9f11b7ed11f5781fc41a3
+/*padding-right: 20px;*/
+    /*These correct a problem with the responsive margin:*/
+    /*margin-right:0;*/
+    /*margin-left: 0;*/
+}
+
+.btn{
+    margin-top:20px;
+
+}
+
+h1, h2, h3 {
+        /*font-size:big;*/
+        text-align: center;
+        /*padding: 10px;*/
+    }
+
+
+
+.alpha {background-color:orange;margin:0px;}
+
+.socialbuttons{
+    background-color: red;
+}
+
+/*.container-fluid{
+    padding-left:0;
+    padding:right:0;
+}*/
+.hotel{
+    /*background-color: red;*/
+/*    position: fixed; 
+    height:20px;
+    bottom:0px;
+    right: 0px;
+    z-index: 5;*/
+}
+.hotel{
+    /*background-color: red;*/
+    position: fixed; 
+    /*height:60px;*/
+    bottom:0px;
+    right: 0px;
+    z-index: 5;
+    /*color: white;*/
+    padding: 5px;
+    opacity: .5;
+    border-top-left-radius:60px; 
+}
+
+.hotelb{
+    /*background-color: red;*/
+    height: 100px;
+    width: 100px;
+    border-top-left-radius:100px;
+}
+
+.foobar{
+<<<<<<< HEAD
+    background-color: red;
+/*    background-color: rgba(235,200,176,.5);*/
+=======
+    background-color: rgba(235,200,176,.5);
+>>>>>>> 0fb60f1021e1f0efddc9f11b7ed11f5781fc41a3
+    padding:5px; 
+    /*margin-top: 40px; */
+    margin-right: 20px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    text-align: center;
+}
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 0fb60f1021e1f0efddc9f11b7ed11f5781fc41a3
+/*from the bootstrap docs:*/
+    /* Large desktop */
+    @media (min-width: 1200px) { 
+
+        .hotel{
+                background-color: yellow;
+
+        }
+
+        .hero-unit h1{
+            margin-top: 1em;
+            
+        }
+
+    }
+
+/*REALLY important!*/
+    @media (min-width: 980px){
+        .hero-unit{
+            margin-top:60px;
+        }
+        .foobar{
+            margin-top: 40px;
+        }
+    }
+
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 980px) and (max-width: 1199px) { 
+            .hotel{
+                background-color: blue;
+            }
+/*                body { 
+background-color: red;
+        padding-top: 40px; }*/
+        }
+
+
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 979px) { 
+            .hotel{
+                background-color: red;
+            }
+/*                body { 
+background-color: red;
+        padding-top: 40px; }*/
+        }
+     
+
+
+
+    /* up to desktop */
+    @media (max-width: 979px) { 
+            .foobar{
+                /*background-color: green;*/
+
+                margin-top: -20px;
+            }
+            .hotel{
+                background-color: green;
+            }
+<<<<<<< HEAD
+
+            .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+            padding: 5px;
+            padding-left: 40px;
+            }
+=======
+>>>>>>> 0fb60f1021e1f0efddc9f11b7ed11f5781fc41a3
+         }
+     
+    /* Landscape phones and down */
+    @media (max-width: 480px) { 
+<<<<<<< HEAD
+            .hotel{
+                background-color: orange;
+            }
+            
+/*            .navbar-inner{
+                padding-left: 50px;
+            }*/
+
+=======
+                .hotel{
+                background-color: orange;
+            }
+>>>>>>> 0fb60f1021e1f0efddc9f11b7ed11f5781fc41a3
+        }
+
+
+
+.sunset {
+    /*margin: 10px;*/
+    padding: 12px;
+    /*background-color: #95B3BF;*/
+    /*opacity: 50%;*/
+    background-color:rgba(242,214,179,0.4);
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+
+
+h1 { font-size: 4em;
+    color: rgb(65,127,166);
+}

@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ie8 wp-toolbar"  lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" class="wp-toolbar"  lang="en-US">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Add New Post &lsaquo; MyApp &#8212; WordPress</title>
+<script type="text/javascript">
+addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+var ajaxurl = '/wp/wp-admin/admin-ajax.php',
+	pagenow = 'post',
+	typenow = 'post',
+	adminpage = 'post-new-php',
+	thousandsSeparator = ',',
+	decimalPoint = '.',
+	isRtl = 0;
+</script>
+<link rel='stylesheet' href='http://gristech.com/wp/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load=admin-bar,buttons,media-views,wp-admin,wp-auth-check&amp;ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='thickbox-css'  href='http://gristech.com/wp/wp-includes/js/thickbox/thickbox.css?ver=20121105' type='text/css' media='all' />
+<link rel='stylesheet' id='colors-css'  href='http://gristech.com/wp/wp-admin/css/colors-fresh.min.css?ver=3.6' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='ie-css'  href='http://gristech.com/wp/wp-admin/css/ie.min.css?ver=3.6' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='grunion-menu-alter-css'  href='http://gristech.com/wp/wp-content/plugins/jetpack/modules/contact-form/css/menu-alter.css?ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='AtD_style-css'  href='http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/atd.css?ver=20120221' type='text/css' media='screen' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var AtD_l10n_r0ar = {"menu_title_spelling":"Spelling","menu_title_repeated_word":"Repeated Word","menu_title_no_suggestions":"No suggestions","menu_option_explain":"Explain...","menu_option_ignore_once":"Ignore suggestion","menu_option_ignore_always":"Ignore always","menu_option_ignore_all":"Ignore all","menu_option_edit_selection":"Edit Selection...","button_proofread":"proofread","button_edit_text":"edit text","button_proofread_tooltip":"Proofread Writing","message_no_errors_found":"No writing errors were found.","message_server_error":"There was a problem communicating with the Proofreading service. Try again in one minute.","message_server_error_short":"There was an error communicating with the proofreading service.","dialog_replace_selection":"Replace selection with:","dialog_confirm_post_publish":"The proofreader has suggestions for this post. Are you sure you want to publish it?\n\nPress OK to publish your post, or Cancel to view the suggestions and edit your post.","dialog_confirm_post_update":"The proofreader has suggestions for this post. Are you sure you want to update it?\n\nPress OK to update your post, or Cancel to view the suggestions and edit your post."};
+/* ]]> */
+</script>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var userSettings = {"url":"\/wp\/","uid":"1","time":"1377066495"};var _wpUtilSettings = {"ajax":{"url":"\/wp\/wp-admin\/admin-ajax.php"}};var _wpMediaModelsL10n = {"settings":{"ajaxurl":"\/wp\/wp-admin\/admin-ajax.php","post":{"id":0}}};var pluploadL10n = {"queue_limit_exceeded":"You have attempted to queue too many files.","file_exceeds_size_limit":"%s exceeds the maximum upload size for this site.","zero_byte_file":"This file is empty. Please try another.","invalid_filetype":"This file type is not allowed. Please try another.","not_an_image":"This file is not an image. Please try another.","image_memory_exceeded":"Memory exceeded. Please try another smaller file.","image_dimensions_exceeded":"This is larger than the maximum size. Please try another.","default_error":"An error occurred in the upload. Please try again later.","missing_upload_url":"There was a configuration error. Please contact the server administrator.","upload_limit_exceeded":"You may only upload 1 file.","http_error":"HTTP error.","upload_failed":"Upload failed.","big_upload_failed":"Please try uploading this file with the %1$sbrowser uploader%2$s.","big_upload_queued":"%s exceeds the maximum upload size for the multi-file uploader when used in your browser.","io_error":"IO error.","security_error":"Security error.","file_cancelled":"File canceled.","upload_stopped":"Upload stopped.","dismiss":"Dismiss","crunching":"Crunching\u2026","deleted":"moved to the trash.","error_uploading":"\u201c%s\u201d has failed to upload."};
+var _wpPluploadSettings = {"defaults":{"runtimes":"html5,silverlight,flash,html4","file_data_name":"async-upload","multiple_queues":true,"max_file_size":"1536000b","url":"\/wp\/wp-admin\/async-upload.php","flash_swf_url":"http:\/\/gristech.com\/wp\/wp-includes\/js\/plupload\/plupload.flash.swf","silverlight_xap_url":"http:\/\/gristech.com\/wp\/wp-includes\/js\/plupload\/plupload.silverlight.xap","filters":[{"title":"Allowed Files","extensions":"*"}],"multipart":true,"urlstream_upload":true,"multipart_params":{"action":"upload-attachment","_wpnonce":"36ce03e4aa"}},"browser":{"mobile":false,"supported":true},"limitExceeded":false};var _wpMediaViewsL10n = {"url":"URL","addMedia":"Add Media","search":"Search","select":"Select","cancel":"Cancel","selected":"%d selected","dragInfo":"Drag and drop to reorder images.","uploadFilesTitle":"Upload Files","uploadImagesTitle":"Upload Images","mediaLibraryTitle":"Media Library","insertMediaTitle":"Insert Media","createNewGallery":"Create a new gallery","returnToLibrary":"\u2190 Return to library","allMediaItems":"All media items","noItemsFound":"No items found.","insertIntoPost":"Insert into post","uploadedToThisPost":"Uploaded to this post","warnDelete":"You are about to permanently delete this item.\n  'Cancel' to stop, 'OK' to delete.","insertFromUrlTitle":"Insert from URL","setFeaturedImageTitle":"Set Featured Image","setFeaturedImage":"Set featured image","createGalleryTitle":"Create Gallery","editGalleryTitle":"Edit Gallery","cancelGalleryTitle":"\u2190 Cancel Gallery","insertGallery":"Insert gallery","updateGallery":"Update gallery","addToGallery":"Add to gallery","addToGalleryTitle":"Add to Gallery","reverseOrder":"Reverse order","settings":{"tabs":[],"tabUrl":"http:\/\/gristech.com\/wp\/wp-admin\/media-upload.php?chromeless=1","mimeTypes":{"image":"Images","audio":"Audio","video":"Video"},"captions":true,"nonce":{"sendToEditor":"32884e6455"},"post":{"id":649,"nonce":"35759b1b7f","featuredImageId":-1},"defaultProps":{"link":"file","align":"","size":""},"embedExts":["mp3","ogg","wma","m4a","wav","mp4","m4v","webm","ogv","wmv","flv"]}};var quicktagsL10n = {"closeAllOpenTags":"Close all open tags","closeTags":"close tags","enterURL":"Enter the URL","enterImageURL":"Enter the URL of the image","enterImageDescription":"Enter a description of the image","fullscreen":"fullscreen","toggleFullscreen":"Toggle fullscreen mode","textdirection":"text direction","toggleTextdirection":"Toggle Editor Text Direction"};/* ]]> */
+</script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-admin/load-scripts.php?c=1&amp;load%5B%5D=jquery-core,jquery-migrate,utils,jquery-ui-core,jquery-ui-widget,jquery-ui-mouse,jquery-ui-sortable,underscore,backbone,wp-util,&amp;load%5B%5D=wp-backbone,media-models,plupload,plupload-html5,plupload-flash,plupload-silverlight,plupload-html4,json2,wp-plupload,media-view&amp;load%5B%5D=s,quicktags&amp;ver=3.6'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/_inc/gallery-settings.js?ver=20121225'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/atd.core.js?ver=20120221'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/atd-nonvis-editor-plugin.js?ver=20120221'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/jquery.atd.js?ver=20120221'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-admin/admin-ajax.php?action=atd_settings&#038;ver=20120221'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/atd-autoproofread.js?ver=20120221'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/install_atd_l10n.js?ver=20120221'></script>
+
+<script type="text/javascript">
+jQuery( function($) {
+	var wpasTitleCounter    = $( '#wpas-title-counter' ),
+	    wpasTwitterCheckbox = $( '.wpas-submit-twitter' ).size(),
+	    wpasTitle = $('#wpas-title').keyup( function() {
+		var length = wpasTitle.val().length;
+		wpasTitleCounter.text( length );
+		if ( wpasTwitterCheckbox && length > 140 ) {
+			wpasTitleCounter.addClass( 'wpas-twitter-length-limit' );
+		} else {
+			wpasTitleCounter.removeClass( 'wpas-twitter-length-limit' );
+		}
+	    } ),
+	    authClick = false;
+
+	$('#publicize-disconnected-form-show').click( function() {
+		$('#publicize-form').slideDown( 'fast' );
+		$(this).hide();
+	} );
+
+	$('#publicize-disconnected-form-hide').click( function() {
+		$('#publicize-form').slideUp( 'fast' );
+		$('#publicize-disconnected-form-show').show();
+	} );
+
+	$('#publicize-form-edit').click( function() {
+		$('#publicize-form').slideDown( 'fast', function() {
+			wpasTitle.focus();
+			if ( !wpasTitle.text() ) {
+				var url = $('#shortlink').size() ? $('#shortlink').val() : '';
+
+				var defaultMessage = $.trim( '' + $("#title").val() + ' ' + url + '' );
+
+				wpasTitle.append( defaultMessage.replace( /<[^>]+>/g,'') );
+
+				var selBeg = defaultMessage.indexOf( $("#title").val() );
+				if ( selBeg < 0 ) {
+					selBeg = 0;
+					selEnd = 0;
+				} else {
+					selEnd = selBeg + $("#title").val().length;
+				}
+
+				var domObj = wpasTitle.get(0);
+				if ( domObj.setSelectionRange ) {
+					domObj.setSelectionRange( selBeg, selEnd );
+				} else if ( domObj.createTextRange ) {
+					var r = domObj.createTextRange();
+					r.moveStart( 'character', selBeg );
+					r.moveEnd( 'character', selEnd );
+					r.select();
+				}
+			}
+			wpasTitle.keyup();
+		} );
+		$('#publicize-defaults').hide();
+		$(this).hide();
+		return false;
+	} );
+
+	$('#publicize-form-hide').click( function() {
+		var newList = $.map( $('#publicize-form').slideUp( 'fast' ).find( ':checked' ), function( el ) {
+			return $.trim( $(el).parent( 'label' ).text() );
+		} );
+		$('#publicize-defaults').html( '<strong>' + newList.join( '</strong>, <strong>' ) + '</strong>' ).show();
+		$('#publicize-form-edit').show();
+		return false;
+	} );
+
+	$('.authorize-link').click( function() {
+		if ( authClick ) {
+			return false;
+		}
+		authClick = true;
+		$(this).after( '<img src="images/loading.gif" class="alignleft" style="margin: 0 .5em" />' );
+		$.ajaxSetup( { async: false } );
+		autosave();
+		return true;
+	} );
+
+	$( '.pub-service' ).click( function() {
+		var service = $(this).data( 'service' ),
+		    fakebox = '<input id="wpas-submit-' + service + '" type="hidden" value="1" name="wpas[submit][' + service + ']" />';
+		$( '#add-publicize-check' ).append( fakebox );
+	} );
+} );
+</script>
+
+<style type="text/css">
+#publicize {
+	line-height: 1.5;
+}
+#publicize ul {
+	margin: 4px 0 4px 6px;
+}
+#publicize li {
+	margin: 0;
+}
+#publicize textarea {
+	margin: 4px 0 0;
+	width: 100%
+}
+#publicize ul.not-connected {
+	list-style: square;
+	padding-left: 1em;
+}
+.post-new-php .authorize-link, .post-php .authorize-link {
+	line-height: 1.5em;
+}
+.post-new-php .authorize-message, .post-php .authorize-message {
+	margin-bottom: 0;
+}
+#poststuff #publicize .updated p {
+	margin: .5em 0;
+}
+.wpas-twitter-length-limit {
+	color: red;
+}
+</style><script type="text/javascript">
+jQuery(document).ready(function($){
+
+// Monitor the "Purge Now" button and execute an AJAX call
+  jQuery('input#SGCachePurgeNow').live('click',function(){
+      jQuery('#SGCachePurgeNow').attr('disabled','disabled').attr('value','Purging! Please wait ...');
+      jQuery('img#AjaxLoading').css({"visibility":"visible"});
+      jQuery.post(ajaxurl,{
+	  action: 'PurgeSGCacheNow',
+	  objects: 'all'
+	},function(response){
+	  setTimeout("jQuery('#SGCachePurgeNow').removeAttr('disabled').attr('value','Purge SG Cache Completely')",2000);
+	  jQuery('img#AjaxLoading').css({"visibility":"hidden"});
+	  if(response=="purged!"){alert('SG Cache successfully purged!');}
+	  else{alert(response);}
+      });
+   });
+
+// Themes
+jQuery('input#SGCP_SaveSettings').live('click',function(){jQuery.SGCPJS_SaveSettings('SGCP_SaveSettings','AjaxLoading_General',{'SGCP_Use_SG_Cache':jQuery("#SGCP_Use_SG_Cache").val(),'SGCP_Autoflush':jQuery("#SGCP_Autoflush").val(),'SGCP_Config_Chages':jQuery("#SGCP_Config_Chages").val()});});
+
+jQuery.SGCPJS_SaveSettings=function(input,image,args){
+  jQuery('#'+input).attr('disabled','disabled').attr('value','Saving ...');
+  jQuery('img#'+image).css({"visibility":"visible"});
+  jQuery.post(ajaxurl,{
+      action:'SGCPSaveSettings',
+      'options[]':args
+    },function(response){
+      if(response=="Saved!"){alert('Settings were successfully saved!');}
+      else{alert('Failed saving the changes: '+response);}
+      jQuery('#'+input).removeAttr('disabled').attr('value','Save');
+      jQuery('img#'+image).css({"visibility":"hidden"});
+  });
+};
+
+});
+</script><script type="text/javascript">
+/* <![CDATA[ */
+	var wpNotesIsJetpackClient = true;
+/* ]]> */
+</script>
+<style type="text/css" media="print">#wpadminbar { display:none; }</style>
+		<style type="text/css" id="jetpack-menu-css">
+			#toplevel_page_jetpack .wp-menu-image {
+				background: url( http://gristech.com/wp/wp-content/plugins/jetpack/_inc/images/menuicon-sprite.png ) 0 90% no-repeat;
+			}
+			/* Retina Jetpack Menu Icon */
+			@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+				#toplevel_page_jetpack .wp-menu-image {
+					background: url( http://gristech.com/wp/wp-content/plugins/jetpack/_inc/images/menuicon-sprite-2x.png ) 0 90% no-repeat;
+					background-size:30px 64px;
+				}
+			}
+			#toplevel_page_jetpack.current .wp-menu-image,
+			#toplevel_page_jetpack.wp-has-current-submenu .wp-menu-image,
+			#toplevel_page_jetpack:hover .wp-menu-image {
+				background-position: top left;
+			}
+		</style></head>
+<body class="wp-admin wp-core-ui no-js  jetpack-connected post-new-php auto-fold admin-bar branch-3-6 version-3-6 admin-color-fresh locale-en-us no-customize-support">
+<script type="text/javascript">
+	document.body.className = document.body.className.replace('no-js','js');
+</script>
+
+	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+			request = true;
+
+			b[c] = b[c].replace( rcs, ' ' );
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+	
+<div id="wpwrap">
+<a tabindex="1" href="#wpbody-content" class="screen-reader-shortcut">Skip to main content</a>
+
+<div id="adminmenuback"></div>
+<div id="adminmenuwrap">
+<div id="adminmenushadow"></div>
+<ul id="adminmenu" role="navigation">
+
+
+	<li class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first" id="menu-dashboard">
+	<a href='index.php' class="wp-first-item wp-has-submenu wp-not-current-submenu menu-top menu-top-first menu-icon-dashboard menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Dashboard</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Dashboard</li><li class="wp-first-item"><a href='index.php' class="wp-first-item">Home</a></li><li><a href='my-sites.php'>My Sites</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_jetpack menu-top-last" id="toplevel_page_jetpack"><a href='admin.php?page=jetpack' class="wp-has-submenu wp-not-current-submenu menu-top toplevel_page_jetpack menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Jetpack</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Jetpack</li><li class="wp-first-item"><a href='admin.php?page=jetpack' class="wp-first-item">Jetpack</a></li><li><a href='admin.php?page=jetpack-debugger'></a></li><li><a href='admin.php?page=omnisearch'>Omnisearch</a></li><li><a href='admin.php?page=stats'>Site Stats</a></li><li><a href='admin.php?page=akismet-key-config'>Akismet</a></li><li><a href='admin.php?page=akismet-stats-display'>Akismet Stats</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-has-current-submenu wp-menu-open open-if-no-js menu-top menu-icon-post menu-top-first" id="menu-posts">
+	<a href='edit.php' class="wp-has-submenu wp-has-current-submenu wp-menu-open open-if-no-js menu-top menu-icon-post menu-top-first" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Posts</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Posts</li><li class="wp-first-item"><a href='edit.php' class="wp-first-item">All Posts</a></li><li class="current"><a href='post-new.php' class="current">Add New</a></li><li><a href='edit-tags.php?taxonomy=category'>Categories</a></li><li><a href='edit-tags.php?taxonomy=post_tag'>Tags</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" id="menu-media">
+	<a href='upload.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-media" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Media</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Media</li><li class="wp-first-item"><a href='upload.php' class="wp-first-item">Library</a></li><li><a href='media-new.php'>Add New</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" id="menu-pages">
+	<a href='edit.php?post_type=page' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-page" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Pages</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Pages</li><li class="wp-first-item"><a href='edit.php?post_type=page' class="wp-first-item">All Pages</a></li><li><a href='post-new.php?post_type=page'>Add New</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-comments" id="menu-comments">
+	<a href='edit-comments.php' class="wp-not-current-submenu menu-top menu-icon-comments" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Comments <span class='awaiting-mod count-0'><span class='pending-count'>0</span></span></div></a></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-feedback menu-top-last" id="menu-posts-feedback">
+	<a href='edit.php?post_type=feedback' class="wp-not-current-submenu menu-top menu-icon-feedback menu-top-last" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><img src="http://gristech.com/wp/wp-content/plugins/jetpack/modules/contact-form//images/grunion-menu.png" alt="" /></div><div class='wp-menu-name'>Feedback</div></a></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" id="menu-appearance">
+	<a href='themes.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-appearance menu-top-first" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Appearance</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Appearance</li><li class="wp-first-item"><a href='themes.php' class="wp-first-item">Themes</a></li><li><a href='customize.php'>Customize</a></li><li><a href='widgets.php'>Widgets</a></li><li><a href='nav-menus.php'>Menus</a></li><li><a href='themes.php?page=editcss'>Edit CSS</a></li><li><a href='themes.php?page=custom-header'>Header</a></li></ul></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-plugins" id="menu-plugins">
+	<a href='plugins.php' class="wp-not-current-submenu menu-top menu-icon-plugins" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Plugins </div></a></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" id="menu-users">
+	<a href='users.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-users" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Users</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Users</li><li class="wp-first-item"><a href='users.php' class="wp-first-item">All Users</a></li><li><a href='user-new.php'>Add New</a></li><li><a href='profile.php'>Your Profile</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" id="menu-tools">
+	<a href='tools.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-tools" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Tools</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Tools</li><li class="wp-first-item"><a href='tools.php' class="wp-first-item">Available Tools</a></li><li><a href='import.php'>Import</a></li><li><a href='export.php'>Export</a></li><li><a href='tools.php?page=SGCP'>SG Cache</a></li></ul></li>
+	<li class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" id="menu-settings">
+	<a href='options-general.php' class="wp-has-submenu wp-not-current-submenu menu-top menu-icon-settings menu-top-last" aria-haspopup="true"><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Settings</div></a>
+	<ul class='wp-submenu wp-submenu-wrap'><li class='wp-submenu-head'>Settings</li><li class="wp-first-item"><a href='options-general.php' class="wp-first-item">General</a></li><li><a href='options-writing.php'>Writing</a></li><li><a href='options-reading.php'>Reading</a></li><li><a href='options-discussion.php'>Discussion</a></li><li><a href='options-media.php'>Media</a></li><li><a href='options-permalink.php'>Permalinks</a></li><li><a href='options-general.php?page=pagerestrict'>Page Restrict</a></li><li><a href='options-general.php?page=sharing'>Sharing</a></li></ul></li>
+	<li class="wp-not-current-submenu wp-menu-separator"><div class="separator"></div></li>
+	<li class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_SGCachePress::purgeCache menu-top-first menu-top-last" id="toplevel_page_SGCachePress::purgeCache">
+	<a href='admin.php?page=SGCachePress::purgeCache' class="wp-not-current-submenu menu-top menu-icon-generic toplevel_page_SGCachePress::purgeCache menu-top-first menu-top-last" ><div class="wp-menu-arrow"><div></div></div><div class='wp-menu-image'><br /></div><div class='wp-menu-name'>Purge Cache</div></a></li><li id="collapse-menu" class="hide-if-no-js"><div id="collapse-button"><div></div></div><span>Collapse menu</span></li></ul>
+</div>
+<div id="wpcontent">
+
+		<div id="wpadminbar" class="nojq nojs" role="navigation">
+			<a class="screen-reader-shortcut" href="#wp-toolbar" tabindex="1">Skip to toolbar</a>
+			<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Top navigation toolbar." tabindex="0">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
+		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/wp-admin/about.php" title="About WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
+		<li id="wp-admin-bar-about"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/about.php">About WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-wporg"><a class="ab-item"  href="http://wordpress.org/">WordPress.org</a>		</li>
+		<li id="wp-admin-bar-documentation"><a class="ab-item"  href="http://codex.wordpress.org/">Documentation</a>		</li>
+		<li id="wp-admin-bar-support-forums"><a class="ab-item"  href="http://wordpress.org/support/">Support Forums</a>		</li>
+		<li id="wp-admin-bar-feedback"><a class="ab-item"  href="http://wordpress.org/support/forum/requests-and-feedback">Feedback</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-my-sites" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/wp-admin/my-sites.php">My Sites</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-my-sites-super-admin" class="ab-submenu">
+		<li id="wp-admin-bar-network-admin" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/wp-admin/network/">Network Admin</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-network-admin-default" class="ab-submenu">
+		<li id="wp-admin-bar-network-admin-d"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/network/">Dashboard</a>		</li>
+		<li id="wp-admin-bar-network-admin-s"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/network/sites.php">Sites</a>		</li>
+		<li id="wp-admin-bar-network-admin-u"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/network/users.php">Users</a>		</li>
+		<li id="wp-admin-bar-network-admin-v"><a class="ab-item"  href="http://gristech.com/wp/">Visit Network</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-my-sites-list" class="ab-sub-secondary ab-submenu">
+		<li id="wp-admin-bar-blog-1" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/wp-admin/"><div class="blavatar"></div>MyApp</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-1-default" class="ab-submenu">
+		<li id="wp-admin-bar-blog-1-d"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/">Dashboard</a>		</li>
+		<li id="wp-admin-bar-blog-1-n"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/post-new.php">New Post</a>		</li>
+		<li id="wp-admin-bar-blog-1-c"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+		<li id="wp-admin-bar-blog-1-v"><a class="ab-item"  href="http://gristech.com/wp/">Visit Site</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-blog-2" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/bradford/wp-admin/"><div class="blavatar"></div>Bradford</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-2-default" class="ab-submenu">
+		<li id="wp-admin-bar-blog-2-d"><a class="ab-item"  href="http://gristech.com/wp/bradford/wp-admin/">Dashboard</a>		</li>
+		<li id="wp-admin-bar-blog-2-n"><a class="ab-item"  href="http://gristech.com/wp/bradford/wp-admin/post-new.php">New Post</a>		</li>
+		<li id="wp-admin-bar-blog-2-c"><a class="ab-item"  href="http://gristech.com/wp/bradford/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+		<li id="wp-admin-bar-blog-2-v"><a class="ab-item"  href="http://gristech.com/wp/bradford/">Visit Site</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-blog-3" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/buckeye/wp-admin/"><div class="blavatar"></div>Buckeye Mower</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-blog-3-default" class="ab-submenu">
+		<li id="wp-admin-bar-blog-3-d"><a class="ab-item"  href="http://gristech.com/wp/buckeye/wp-admin/">Dashboard</a>		</li>
+		<li id="wp-admin-bar-blog-3-n"><a class="ab-item"  href="http://gristech.com/wp/buckeye/wp-admin/post-new.php">New Post</a>		</li>
+		<li id="wp-admin-bar-blog-3-c"><a class="ab-item"  href="http://gristech.com/wp/buckeye/wp-admin/edit-comments.php">Manage Comments</a>		</li>
+		<li id="wp-admin-bar-blog-3-v"><a class="ab-item"  href="http://gristech.com/wp/buckeye/">Visit Site</a>		</li></ul></div>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/">MyApp</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
+		<li id="wp-admin-bar-view-site"><a class="ab-item"  href="http://gristech.com/wp/">Visit Site</a>		</li>
+		<li id="wp-admin-bar-edit-site"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/network/site-info.php?id=1">Edit Site</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-updates"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/network/update-core.php" title="2 Theme Updates"><span class="ab-icon"></span><span class="ab-label">2</span><span class="screen-reader-text">2 Theme Updates</span></a>		</li>
+		<li id="wp-admin-bar-comments"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/edit-comments.php" title="0 comments awaiting moderation"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-0">0</span></a>		</li>
+		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/wp-admin/post-new.php" title="Add New"><span class="ab-icon"></span><span class="ab-label">New</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
+		<li id="wp-admin-bar-new-post"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/post-new.php">Post</a>		</li>
+		<li id="wp-admin-bar-new-media"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/media-new.php">Media</a>		</li>
+		<li id="wp-admin-bar-new-page"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/post-new.php?post_type=page">Page</a>		</li>
+		<li id="wp-admin-bar-new-user"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/user-new.php">User</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1">
+		<form action="http://gristech.com/wp/wp-admin/admin.php" method="get" class="" id="adminbarsearch">
+			<input type="hidden" name="page" value="omnisearch" />
+			<input name="s" type="search" class="adminbar-input" id="adminbar-search" value="" placeholder="Search Everything" />
+							<input type="submit" class="adminbar-button" value="Search" />
+					</form>
+
+		<style>
+				#adminbar-search::-webkit-input-placeholder,
+				#adminbar-search:-moz-placeholder,
+				#adminbar-search::-moz-placeholder,
+				#adminbar-search:-ms-input-placeholder {
+					text-shadow: none;
+				}
+			</style></div>		</li>
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item"  aria-haspopup="true" href="http://gristech.com/wp/wp-admin/profile.php" title="My Account">Howdy, gristech<img alt='' src='http://0.gravatar.com/avatar/4d474122848556ec9da343aac064e5f4?s=16&amp;d=&amp;r=PG' class='avatar avatar-16 photo' height='16' width='16' /></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://gristech.com/wp/wp-admin/profile.php"><img alt='' src='http://0.gravatar.com/avatar/4d474122848556ec9da343aac064e5f4?s=64&amp;d=&amp;r=PG' class='avatar avatar-64 photo' height='64' width='64' /><span class='display-name'>gristech</span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item"  href="http://gristech.com/wp/wp-admin/profile.php">Edit My Profile</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item"  href="http://gristech.com/wp/wp-login.php?action=logout&#038;_wpnonce=571eb6e848">Log Out</a>		</li></ul></div>		</li>
+		<li id="wp-admin-bar-notes" class="menupop"><div class="ab-item ab-empty-item" ><span id="wpnt-notes-unread-count" class="wpnt-loading wpn-read">
+					<span class="noticon noticon-notification"></span>
+					</span></div><div id="wpnt-notes-panel" style="display:none" lang="en_US" dir="ltr"><div class="wpnt-notes-panel-header"><span class="wpnt-notes-header">Notifications</span><span class="wpnt-notes-panel-link"></span></div></div>		</li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://gristech.com/wp/wp-login.php?action=logout&#038;_wpnonce=571eb6e848">Log Out</a>
+					</div>
+
+		
+<div id="wpbody">
+
+<div id="wpbody-content" aria-label="Main content" tabindex="0">
+		<div id="screen-meta" class="metabox-prefs">
+
+			<div id="contextual-help-wrap" class="hidden" tabindex="-1" aria-label="Contextual Help Tab">
+				<div id="contextual-help-back"></div>
+				<div id="contextual-help-columns">
+					<div class="contextual-help-tabs">
+						<ul>
+						
+							<li id="tab-link-customize-display" class="active">
+								<a href="#tab-panel-customize-display" aria-controls="tab-panel-customize-display">
+									Customizing This Display								</a>
+							</li>
+						
+							<li id="tab-link-title-post-editor">
+								<a href="#tab-panel-title-post-editor" aria-controls="tab-panel-title-post-editor">
+									Title and Post Editor								</a>
+							</li>
+						
+							<li id="tab-link-inserting-media">
+								<a href="#tab-panel-inserting-media" aria-controls="tab-panel-inserting-media">
+									Inserting Media								</a>
+							</li>
+						
+							<li id="tab-link-publish-box">
+								<a href="#tab-panel-publish-box" aria-controls="tab-panel-publish-box">
+									Publish Settings								</a>
+							</li>
+						
+							<li id="tab-link-discussion-settings">
+								<a href="#tab-panel-discussion-settings" aria-controls="tab-panel-discussion-settings">
+									Discussion Settings								</a>
+							</li>
+												</ul>
+					</div>
+
+										<div class="contextual-help-sidebar">
+						<p>You can also create posts with the <a href="options-writing.php">Press This bookmarklet</a>.</p><p><strong>For more information:</strong></p><p><a href="http://codex.wordpress.org/Posts_Add_New_Screen" target="_blank">Documentation on Writing and Editing Posts</a></p><p><a href="http://wordpress.org/support/" target="_blank">Support Forums</a></p>					</div>
+					
+					<div class="contextual-help-tabs-wrap">
+						
+							<div id="tab-panel-customize-display" class="help-tab-content active">
+								<p>The title field and the big Post Editing Area are fixed in place, but you can reposition all the other boxes using drag and drop. You can also minimize or expand them by clicking the title bar of each box. Use the Screen Options tab to unhide more boxes (Excerpt, Send Trackbacks, Custom Fields, Discussion, Slug, Author) or to choose a 1- or 2-column layout for this screen.</p>							</div>
+						
+							<div id="tab-panel-title-post-editor" class="help-tab-content">
+								<p><strong>Title</strong> - Enter a title for your post. After you enter a title, you&#8217;ll see the permalink below, which you can edit.</p><p><strong>Post editor</strong> - Enter the text for your post. There are two modes of editing: Visual and Text. Choose the mode by clicking on the appropriate tab. Visual mode gives you a WYSIWYG editor. Click the last icon in the row to get a second row of controls. The Text mode allows you to enter HTML along with your post text. Line breaks will be converted to paragraphs automatically. You can insert media files by clicking the icons above the post editor and following the directions. You can go to the distraction-free writing screen via the Fullscreen icon in Visual mode (second to last in the top row) or the Fullscreen button in Text mode (last in the row). Once there, you can make buttons visible by hovering over the top area. Exit Fullscreen back to the regular post editor.</p>							</div>
+						
+							<div id="tab-panel-inserting-media" class="help-tab-content">
+								<p>You can upload and insert media (images, audio, documents, etc.) by clicking the Add Media button. You can select from the images and files already uploaded to the Media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button.</p><p>You can also embed media from many popular websites including Twitter, YouTube, Flickr and others by pasting the media URL on its own line into the content of your post/page. Please refer to the Codex to <a href="http://codex.wordpress.org/Embeds">learn more about embeds</a>.</p>							</div>
+						
+							<div id="tab-panel-publish-box" class="help-tab-content">
+								<p>Several boxes on this screen contain settings for how your content will be published, including:</p><ul><li><strong>Publish</strong> - You can set the terms of publishing your post in the Publish box. For Status, Visibility, and Publish (immediately), click on the Edit link to reveal more options. Visibility includes options for password-protecting a post or making it stay at the top of your blog indefinitely (sticky). Publish (immediately) allows you to set a future or past date and time, so you can schedule a post to be published in the future or backdate a post.</li><li><strong>Format</strong> - Post Formats designate how your theme will display a specific post. For example, you could have a <em>standard</em> blog post with a title and paragraphs, or a short <em>aside</em> that omits the title and contains a short text blurb. Please refer to the Codex for <a href="http://codex.wordpress.org/Post_Formats#Supported_Formats">descriptions of each post format</a>. Your theme could enable all or some of 10 possible formats.</li><li><strong>Featured Image</strong> - This allows you to associate an image with your post without inserting it. This is usually useful only if your theme makes use of the featured image as a post thumbnail on the home page, a custom header, etc.</li></ul>							</div>
+						
+							<div id="tab-panel-discussion-settings" class="help-tab-content">
+								<p><strong>Send Trackbacks</strong> - Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. Enter the URL(s) you want to send trackbacks. If you link to other WordPress sites they&#8217;ll be notified automatically using pingbacks, and this field is unnecessary.</p><p><strong>Discussion</strong> - You can turn comments and pings on or off, and if there are comments on the post, you can see them here and moderate them.</p>							</div>
+											</div>
+				</div>
+			</div>
+				<div id="screen-options-wrap" class="hidden" tabindex="-1" aria-label="Screen Options Tab">
+		<form id="adv-settings" action="" method="post">
+					<h5>Show on screen</h5>
+					<div class="metabox-prefs">
+				<label for="pagerestrictionstatusdiv-hide"><input class="hide-postbox-tog" name="pagerestrictionstatusdiv-hide" type="checkbox" id="pagerestrictionstatusdiv-hide" value="pagerestrictionstatusdiv" checked="checked" />Restriction</label>
+<label for="postexcerpt-hide"><input class="hide-postbox-tog" name="postexcerpt-hide" type="checkbox" id="postexcerpt-hide" value="postexcerpt" />Excerpt</label>
+<label for="trackbacksdiv-hide"><input class="hide-postbox-tog" name="trackbacksdiv-hide" type="checkbox" id="trackbacksdiv-hide" value="trackbacksdiv" />Send Trackbacks</label>
+<label for="postcustom-hide"><input class="hide-postbox-tog" name="postcustom-hide" type="checkbox" id="postcustom-hide" value="postcustom" />Custom Fields</label>
+<label for="commentstatusdiv-hide"><input class="hide-postbox-tog" name="commentstatusdiv-hide" type="checkbox" id="commentstatusdiv-hide" value="commentstatusdiv" />Discussion</label>
+<label for="slugdiv-hide"><input class="hide-postbox-tog" name="slugdiv-hide" type="checkbox" id="slugdiv-hide" value="slugdiv" />Slug</label>
+<label for="authordiv-hide"><input class="hide-postbox-tog" name="authordiv-hide" type="checkbox" id="authordiv-hide" value="authordiv" />Author</label>
+<label for="sharing_meta-hide"><input class="hide-postbox-tog" name="sharing_meta-hide" type="checkbox" id="sharing_meta-hide" value="sharing_meta" checked="checked" />Sharing</label>
+<label for="formatdiv-hide"><input class="hide-postbox-tog" name="formatdiv-hide" type="checkbox" id="formatdiv-hide" value="formatdiv" checked="checked" />Format</label>
+<label for="categorydiv-hide"><input class="hide-postbox-tog" name="categorydiv-hide" type="checkbox" id="categorydiv-hide" value="categorydiv" checked="checked" />Categories</label>
+<label for="tagsdiv-post_tag-hide"><input class="hide-postbox-tog" name="tagsdiv-post_tag-hide" type="checkbox" id="tagsdiv-post_tag-hide" value="tagsdiv-post_tag" checked="checked" />Tags</label>
+<label for="postimagediv-hide"><input class="hide-postbox-tog" name="postimagediv-hide" type="checkbox" id="postimagediv-hide" value="postimagediv" checked="checked" />Featured Image</label>
+				<br class="clear" />
+			</div>
+					<h5 class="screen-layout">Screen Layout</h5>
+		<div class='columns-prefs'>Number of Columns:				<label class="columns-prefs-1">
+					<input type='radio' name='screen_columns' value='1'
+						 />
+					1				</label>
+								<label class="columns-prefs-2">
+					<input type='radio' name='screen_columns' value='2'
+						 checked='checked' />
+					2				</label>
+						</div>
+				<div><input type="hidden" id="screenoptionnonce" name="screenoptionnonce" value="03252da79d" /></div>
+		</form>
+		</div>
+				</div>
+				<div id="screen-meta-links">
+					<div id="contextual-help-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<a href="#contextual-help-wrap" id="contextual-help-link" class="show-settings" aria-controls="contextual-help-wrap" aria-expanded="false">Help</a>
+			</div>
+					<div id="screen-options-link-wrap" class="hide-if-no-js screen-meta-toggle">
+			<a href="#screen-options-wrap" id="show-settings-link" class="show-settings" aria-controls="screen-options-wrap" aria-expanded="false">Screen Options</a>
+			</div>
+				</div>
+		
+<div class="wrap">
+<div id="icon-edit" class="icon32 icon32-posts-post"><br /></div><h2>Add New Post</h2>
+<div id="lost-connection-notice" class="error hidden">
+	<p><span class="spinner"></span> <strong>Connection lost.</strong> Saving has been disabled until you&#8217;re reconnected.	<span class="hide-if-no-sessionstorage">We&#8217;re backing up this post in your browser, just in case.</span>
+	</p>
+</div>
+
+<form name="post" action="post.php" method="post" id="post">
+<input type="hidden" id="_wpnonce" name="_wpnonce" value="35759b1b7f" /><input type="hidden" name="_wp_http_referer" value="/wp/wp-admin/post-new.php" /><input type="hidden" id="user-id" name="user_ID" value="1" />
+<input type="hidden" id="hiddenaction" name="action" value="editpost" />
+<input type="hidden" id="originalaction" name="originalaction" value="editpost" />
+<input type="hidden" id="post_author" name="post_author" value="1" />
+<input type="hidden" id="post_type" name="post_type" value="post" />
+<input type="hidden" id="original_post_status" name="original_post_status" value="auto-draft" />
+<input type="hidden" id="referredby" name="referredby" value="http://gristech.com/wp/myblog/" />
+<input type="hidden" name="_wp_original_http_referer" value="http://gristech.com/wp/myblog/" /><input type='hidden' id='auto_draft' name='auto_draft' value='1' /><input type='hidden' id='post_ID' name='post_ID' value='649' /><input type="hidden" id="autosavenonce" name="autosavenonce" value="abef2f0ee5" /><input type="hidden" id="meta-box-order-nonce" name="meta-box-order-nonce" value="5f543bfbec" /><input type="hidden" id="closedpostboxesnonce" name="closedpostboxesnonce" value="379d7f71e9" />
+<div id="poststuff">
+<div id="post-body" class="metabox-holder columns-2">
+<div id="post-body-content">
+
+<div id="titlediv">
+<div id="titlewrap">
+	<label class="screen-reader-text" id="title-prompt-text" for="title">Enter title here</label>
+	<input type="text" name="post_title" size="30" value="" id="title" autocomplete="off" />
+</div>
+<div class="inside">
+	<div id="edit-slug-box" class="hide-if-no-js">
+		</div>
+</div>
+<input type="hidden" id="samplepermalinknonce" name="samplepermalinknonce" value="baa2726d98" /></div><!-- /titlediv -->
+<div id="postdivrich" class="postarea edit-form-section">
+
+<div id="wp-content-wrap" class="wp-core-ui wp-editor-wrap tmce-active"><link rel='stylesheet' id='editor-buttons-css'  href='http://gristech.com/wp/wp-includes/css/editor.min.css?ver=3.6' type='text/css' media='all' />
+<div id="wp-content-editor-tools" class="wp-editor-tools hide-if-no-js"><a id="content-html" class="wp-switch-editor switch-html" onclick="switchEditors.switchto(this);">Text</a>
+<a id="content-tmce" class="wp-switch-editor switch-tmce" onclick="switchEditors.switchto(this);">Visual</a>
+<div id="wp-content-media-buttons" class="wp-media-buttons"><a href="#" id="insert-media-button" class="button insert-media add_media" data-editor="content" title="Add Media"><span class="wp-media-buttons-icon"></span> Add Media</a>
+	<a id="insert-jetpack-contact-form" class="button thickbox" title="Add Contact Form" data-editor="content" href="http://gristech.com/wp/wp-admin/admin-ajax.php?post_id=649&#038;action=grunion_form_builder&#038;TB_iframe=true&#038;width=768&id=add_form">
+		<span class="jetpack-contact-form-icon"></span> Add Contact Form	</a>
+
+	</div>
+</div>
+<div id="wp-content-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" style="height: 360px" cols="40" name="content" id="content"></textarea></div>
+</div>
+
+<table id="post-status-info" cellspacing="0"><tbody><tr>
+	<td id="wp-word-count">Word count: <span class="word-count">0</span></td>
+	<td class="autosave-info">
+	<span class="autosave-message">&nbsp;</span>
+	</td>
+</tr></tbody></table>
+
+</div>
+</div><!-- /post-body-content -->
+
+<div id="postbox-container-1" class="postbox-container">
+<div id="side-sortables" class="meta-box-sortables"><div id="submitdiv" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Publish</span></h3>
+<div class="inside">
+<div class="submitbox" id="submitpost">
+
+<div id="minor-publishing">
+
+<div style="display:none;">
+<p class="submit"><input type="submit" name="save" id="save" class="button" value="Save"  /></p></div>
+
+<div id="minor-publishing-actions">
+<div id="save-action">
+<input  type="submit" name="save" id="save-post" value="Save Draft" class="button" />
+<span class="spinner"></span>
+</div>
+<div id="preview-action">
+<a class="preview button" href="http://gristech.com/wp/?p=649&#038;preview=true" target="wp-preview" id="post-preview">Preview</a>
+<input type="hidden" name="wp-preview" id="wp-preview" value="" />
+</div>
+<div class="clear"></div>
+</div><!-- #minor-publishing-actions -->
+
+<div id="misc-publishing-actions">
+
+<div class="misc-pub-section"><label for="post_status">Status:</label>
+<span id="post-status-display">
+Draft</span>
+<a href="#post_status" class="edit-post-status hide-if-no-js">Edit</a>
+
+<div id="post-status-select" class="hide-if-js">
+<input type="hidden" name="hidden_post_status" id="hidden_post_status" value="draft" />
+<select name='post_status' id='post_status'>
+<option value='pending'>Pending Review</option>
+<option selected='selected' value='draft'>Draft</option>
+</select>
+ <a href="#post_status" class="save-post-status hide-if-no-js button">OK</a>
+ <a href="#post_status" class="cancel-post-status hide-if-no-js">Cancel</a>
+</div>
+
+</div><!-- .misc-pub-section -->
+
+<div class="misc-pub-section" id="visibility">
+Visibility: <span id="post-visibility-display">Public</span>
+<a href="#visibility" class="edit-visibility hide-if-no-js">Edit</a>
+
+<div id="post-visibility-select" class="hide-if-js">
+<input type="hidden" name="hidden_post_password" id="hidden-post-password" value="" />
+<input type="checkbox" style="display:none" name="hidden_post_sticky" id="hidden-post-sticky" value="sticky"  />
+<input type="hidden" name="hidden_post_visibility" id="hidden-post-visibility" value="public" />
+<input type="radio" name="visibility" id="visibility-radio-public" value="public"  checked='checked' /> <label for="visibility-radio-public" class="selectit">Public</label><br />
+<span id="sticky-span"><input id="sticky" name="sticky" type="checkbox" value="sticky"  /> <label for="sticky" class="selectit">Stick this post to the front page</label><br /></span>
+<input type="radio" name="visibility" id="visibility-radio-password" value="password"  /> <label for="visibility-radio-password" class="selectit">Password protected</label><br />
+<span id="password-span"><label for="post_password">Password:</label> <input type="text" name="post_password" id="post_password" value="" /><br /></span>
+<input type="radio" name="visibility" id="visibility-radio-private" value="private"  /> <label for="visibility-radio-private" class="selectit">Private</label><br />
+
+<p>
+ <a href="#visibility" class="save-post-visibility hide-if-no-js button">OK</a>
+ <a href="#visibility" class="cancel-post-visibility hide-if-no-js">Cancel</a>
+</p>
+</div>
+
+</div><!-- .misc-pub-section -->
+
+<div class="misc-pub-section curtime">
+	<span id="timestamp">
+	Publish <b>immediately</b></span>
+	<a href="#edit_timestamp" class="edit-timestamp hide-if-no-js">Edit</a>
+	<div id="timestampdiv" class="hide-if-js"><div class="timestamp-wrap"><select id="mm" name="mm">
+			<option value="01">01-Jan</option>
+			<option value="02">02-Feb</option>
+			<option value="03">03-Mar</option>
+			<option value="04">04-Apr</option>
+			<option value="05">05-May</option>
+			<option value="06">06-Jun</option>
+			<option value="07">07-Jul</option>
+			<option value="08" selected="selected">08-Aug</option>
+			<option value="09">09-Sep</option>
+			<option value="10">10-Oct</option>
+			<option value="11">11-Nov</option>
+			<option value="12">12-Dec</option>
+</select> <input type="text" id="jj" name="jj" value="21" size="2" maxlength="2" autocomplete="off" />, <input type="text" id="aa" name="aa" value="2013" size="4" maxlength="4" autocomplete="off" /> @ <input type="text" id="hh" name="hh" value="06" size="2" maxlength="2" autocomplete="off" /> : <input type="text" id="mn" name="mn" value="28" size="2" maxlength="2" autocomplete="off" /></div><input type="hidden" id="ss" name="ss" value="15" />
+
+<input type="hidden" id="hidden_mm" name="hidden_mm" value="08" />
+<input type="hidden" id="cur_mm" name="cur_mm" value="08" />
+<input type="hidden" id="hidden_jj" name="hidden_jj" value="21" />
+<input type="hidden" id="cur_jj" name="cur_jj" value="21" />
+<input type="hidden" id="hidden_aa" name="hidden_aa" value="2013" />
+<input type="hidden" id="cur_aa" name="cur_aa" value="2013" />
+<input type="hidden" id="hidden_hh" name="hidden_hh" value="06" />
+<input type="hidden" id="cur_hh" name="cur_hh" value="06" />
+<input type="hidden" id="hidden_mn" name="hidden_mn" value="28" />
+<input type="hidden" id="cur_mn" name="cur_mn" value="28" />
+
+<p>
+<a href="#edit_timestamp" class="save-timestamp hide-if-no-js button">OK</a>
+<a href="#edit_timestamp" class="cancel-timestamp hide-if-no-js">Cancel</a>
+</p>
+</div>
+</div>
+
+		<div id="publicize" class="misc-pub-section misc-pub-section-last">
+			Publicize:&nbsp;Not Connected
+			<span id="publicize-defaults"><strong></strong></span>
+
+							<a href="#" id="publicize-disconnected-form-show">Show</a><br />
+			
+			
+				<div id="publicize-form" class="hide-if-js">
+					<div id="add-publicize-check" style="display: none;"></div>
+
+					<strong>Connect to:</strong>
+
+					<ul class="not-connected">
+												<li>
+							<a class="pub-service" data-service="facebook" title="Connect and share your posts on Facebook" target="_blank" href="http://gristech.com/wp/wp-admin/options-general.php?page=sharing&action=request&service=facebook&kr_nonce=fa5f1e5e01&nonce=1e61df17b0">
+								Facebook							</a>
+						</li>
+												<li>
+							<a class="pub-service" data-service="twitter" title="Connect and share your posts on Twitter" target="_blank" href="http://gristech.com/wp/wp-admin/options-general.php?page=sharing&action=request&service=twitter&kr_nonce=fa5f1e5e01&nonce=92ee105dda">
+								Twitter							</a>
+						</li>
+												<li>
+							<a class="pub-service" data-service="linkedin" title="Connect and share your posts on LinkedIn" target="_blank" href="http://gristech.com/wp/wp-admin/options-general.php?page=sharing&action=request&service=linkedin&kr_nonce=fa5f1e5e01&nonce=f5b754314f">
+								LinkedIn							</a>
+						</li>
+												<li>
+							<a class="pub-service" data-service="tumblr" title="Connect and share your posts on Tumblr" target="_blank" href="http://gristech.com/wp/wp-admin/options-general.php?page=sharing&action=request&service=tumblr&kr_nonce=fa5f1e5e01&nonce=85773591f7">
+								Tumblr							</a>
+						</li>
+												<li>
+							<a class="pub-service" data-service="path" title="Connect and share your posts on Path" target="_blank" href="http://gristech.com/wp/wp-admin/options-general.php?page=sharing&action=request&service=path&kr_nonce=fa5f1e5e01&nonce=a1c54ee6e6">
+								Path							</a>
+						</li>
+											</ul>
+
+											<a href="#" class="hide-if-no-js" id="publicize-disconnected-form-hide">Hide</a>
+									</div> 
+		</div> </div>
+<div class="clear"></div>
+</div>
+
+<div id="major-publishing-actions">
+<div id="delete-action">
+<a class="submitdelete deletion" href="http://gristech.com/wp/wp-admin/post.php?post=649&amp;action=trash&amp;_wpnonce=c64bc0e9f9">Move to Trash</a></div>
+
+<div id="publishing-action">
+<span class="spinner"></span>
+		<input name="original_publish" type="hidden" id="original_publish" value="Publish" />
+		<input type="submit" name="publish" id="publish" class="button button-primary button-large" value="Publish" accesskey="p"  /></div>
+<div class="clear"></div>
+</div>
+</div>
+
+</div>
+</div>
+<div id="tagsdiv-post_tag" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Tags</span></h3>
+<div class="inside">
+<div class="tagsdiv" id="post_tag">
+	<div class="jaxtag">
+	<div class="nojs-tags hide-if-js">
+	<p>Add or remove tags</p>
+	<textarea name="tax_input[post_tag]" rows="3" cols="20" class="the-tags" id="tax-input-post_tag" ></textarea></div>
+ 		<div class="ajaxtag hide-if-no-js">
+		<label class="screen-reader-text" for="new-tag-post_tag">Tags</label>
+		<div class="taghint">Add New Tag</div>
+		<p><input type="text" id="new-tag-post_tag" name="newtag[post_tag]" class="newtag form-input-tip" size="16" autocomplete="off" value="" />
+		<input type="button" class="button tagadd" value="Add" /></p>
+	</div>
+	<p class="howto">Separate tags with commas</p>
+		</div>
+	<div class="tagchecklist"></div>
+</div>
+<p class="hide-if-no-js"><a href="#titlediv" class="tagcloud-link" id="link-post_tag">Choose from the most used tags</a></p>
+</div>
+</div>
+<div id="categorydiv" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Categories</span></h3>
+<div class="inside">
+	<div id="taxonomy-category" class="categorydiv">
+		<ul id="category-tabs" class="category-tabs">
+			<li class="tabs"><a href="#category-all">All Categories</a></li>
+			<li class="hide-if-no-js"><a href="#category-pop">Most Used</a></li>
+		</ul>
+
+		<div id="category-pop" class="tabs-panel" style="display: none;">
+			<ul id="categorychecklist-pop" class="categorychecklist form-no-clear" >
+				
+		<li id="popular-category-1" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-1" type="checkbox"  value="1"  />
+				Uncategorized			</label>
+		</li>
+
+		
+		<li id="popular-category-2" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-2" type="checkbox"  value="2"  />
+				dev			</label>
+		</li>
+
+		
+		<li id="popular-category-3" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-3" type="checkbox"  value="3"  />
+				Laravel			</label>
+		</li>
+
+		
+		<li id="popular-category-7" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-7" type="checkbox"  value="7"  />
+				to do			</label>
+		</li>
+
+		
+		<li id="popular-category-4" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-4" type="checkbox"  value="4"  />
+				learn			</label>
+		</li>
+
+		
+		<li id="popular-category-5" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-5" type="checkbox"  value="5"  />
+				private			</label>
+		</li>
+
+		
+		<li id="popular-category-6" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-6" type="checkbox"  value="6"  />
+				public			</label>
+		</li>
+
+		
+		<li id="popular-category-83" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-83" type="checkbox"  value="83"  />
+				notes			</label>
+		</li>
+
+		
+		<li id="popular-category-92" class="popular-category">
+			<label class="selectit">
+			<input id="in-popular-category-92" type="checkbox"  value="92"  />
+				other			</label>
+		</li>
+
+					</ul>
+		</div>
+
+		<div id="category-all" class="tabs-panel">
+			<input type='hidden' name='post_category[]' value='0' />			<ul id="categorychecklist" data-wp-lists="list:category" class="categorychecklist form-no-clear">
+				
+<li id='category-2' class="popular-category"><label class="selectit"><input value="2" type="checkbox" name="post_category[]" id="in-category-2" /> dev</label><ul class='children'>
+
+<li id='category-3' class="popular-category"><label class="selectit"><input value="3" type="checkbox" name="post_category[]" id="in-category-3" /> Laravel</label></li>
+</ul>
+</li>
+
+<li id='category-4' class="popular-category"><label class="selectit"><input value="4" type="checkbox" name="post_category[]" id="in-category-4" /> learn</label></li>
+
+<li id='category-83' class="popular-category"><label class="selectit"><input value="83" type="checkbox" name="post_category[]" id="in-category-83" /> notes</label></li>
+
+<li id='category-92' class="popular-category"><label class="selectit"><input value="92" type="checkbox" name="post_category[]" id="in-category-92" /> other</label></li>
+
+<li id='category-5' class="popular-category"><label class="selectit"><input value="5" type="checkbox" name="post_category[]" id="in-category-5" /> private</label></li>
+
+<li id='category-6' class="popular-category"><label class="selectit"><input value="6" type="checkbox" name="post_category[]" id="in-category-6" /> public</label></li>
+
+<li id='category-7' class="popular-category"><label class="selectit"><input value="7" type="checkbox" name="post_category[]" id="in-category-7" /> to do</label></li>
+
+<li id='category-1' class="popular-category"><label class="selectit"><input value="1" type="checkbox" name="post_category[]" id="in-category-1" /> Uncategorized</label></li>
+
+<li id='category-8'><label class="selectit"><input value="8" type="checkbox" name="post_category[]" id="in-category-8" /> work</label></li>
+			</ul>
+		</div>
+				<div id="category-adder" class="wp-hidden-children">
+				<h4>
+					<a id="category-add-toggle" href="#category-add" class="hide-if-no-js">
+						+ Add New Category					</a>
+				</h4>
+				<p id="category-add" class="category-add wp-hidden-child">
+					<label class="screen-reader-text" for="newcategory">Add New Category</label>
+					<input type="text" name="newcategory" id="newcategory" class="form-required form-input-tip" value="New Category Name" aria-required="true"/>
+					<label class="screen-reader-text" for="newcategory_parent">
+						Parent Category:					</label>
+					<select name='newcategory_parent' id='newcategory_parent' class='postform' >
+	<option value='-1'>&mdash; Parent Category &mdash;</option>
+	<option class="level-0" value="2">dev</option>
+	<option class="level-1" value="3">&nbsp;&nbsp;&nbsp;Laravel</option>
+	<option class="level-0" value="4">learn</option>
+	<option class="level-0" value="83">notes</option>
+	<option class="level-0" value="92">other</option>
+	<option class="level-0" value="5">private</option>
+	<option class="level-0" value="6">public</option>
+	<option class="level-0" value="7">to do</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="8">work</option>
+</select>
+					<input type="button" id="category-add-submit" data-wp-lists="add:categorychecklist:category-add" class="button category-add-submit" value="Add New Category" />
+					<input type="hidden" id="_ajax_nonce-add-category" name="_ajax_nonce-add-category" value="17447f9ccb" />					<span id="category-ajax-response"></span>
+				</p>
+			</div>
+			</div>
+	</div>
+</div>
+<div id="postimagediv" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Featured Image</span></h3>
+<div class="inside">
+<p class="hide-if-no-js"><a title="Set featured image" href="http://gristech.com/wp/wp-admin/media-upload.php?post_id=649&#038;type=image&#038;TB_iframe=1" id="set-post-thumbnail" class="thickbox">Set featured image</a></p></div>
+</div>
+<div id="formatdiv" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Format</span></h3>
+<div class="inside">
+	<div id="post-formats-select">
+		<input type="radio" name="post_format" class="post-format" id="post-format-0" value="0"  checked='checked' /> <label for="post-format-0" class="post-format-icon post-format-standard">Standard</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-aside" value="aside"  /> <label for="post-format-aside" class="post-format-icon post-format-aside">Aside</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-audio" value="audio"  /> <label for="post-format-audio" class="post-format-icon post-format-audio">Audio</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-chat" value="chat"  /> <label for="post-format-chat" class="post-format-icon post-format-chat">Chat</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-gallery" value="gallery"  /> <label for="post-format-gallery" class="post-format-icon post-format-gallery">Gallery</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-image" value="image"  /> <label for="post-format-image" class="post-format-icon post-format-image">Image</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-link" value="link"  /> <label for="post-format-link" class="post-format-icon post-format-link">Link</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-quote" value="quote"  /> <label for="post-format-quote" class="post-format-icon post-format-quote">Quote</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-status" value="status"  /> <label for="post-format-status" class="post-format-icon post-format-status">Status</label>
+				<br /><input type="radio" name="post_format" class="post-format" id="post-format-video" value="video"  /> <label for="post-format-video" class="post-format-icon post-format-video">Video</label>
+		<br />
+	</div>
+	</div>
+</div>
+</div></div>
+<div id="postbox-container-2" class="postbox-container">
+<div id="normal-sortables" class="meta-box-sortables"><div id="pagerestrictionstatusdiv" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Restriction</span></h3>
+<div class="inside">
+	<p>
+		<input name="pr" type="hidden" value="update" />
+		<label for="restriction_status" class="selectit">
+			<input type="checkbox" name="restriction_status" id="restriction_status"/>
+			Restrict Post		</label>
+	</p>
+	<p>These settings apply to this post only. For a full list of restriction statuses see the <a href="options-general.php?page=pagerestrict">global options page</a>.</p>
+</div>
+</div>
+<div id="postexcerpt" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Excerpt</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="excerpt">Excerpt</label><textarea rows="1" cols="40" name="excerpt" id="excerpt"></textarea>
+<p>Excerpts are optional hand-crafted summaries of your content that can be used in your theme. <a href="http://codex.wordpress.org/Excerpt" target="_blank">Learn more about manual excerpts.</a></p>
+</div>
+</div>
+<div id="trackbacksdiv" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Send Trackbacks</span></h3>
+<div class="inside">
+<p><label for="trackback_url">Send trackbacks to:</label> <input type="text" name="trackback_url" id="trackback_url" class="code" value="" /><br /> (Separate multiple URLs with spaces)</p>
+<p>Trackbacks are a way to notify legacy blog systems that you&#8217;ve linked to them. If you link other WordPress sites they&#8217;ll be notified automatically using <a href="http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments" target="_blank">pingbacks</a>, no other action necessary.</p>
+</div>
+</div>
+<div id="postcustom" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Custom Fields</span></h3>
+<div class="inside">
+<div id="postcustomstuff">
+<div id="ajax-response"></div>
+
+<table id="list-table" style="display: none;">
+	<thead>
+	<tr>
+		<th class="left">Name</th>
+		<th>Value</th>
+	</tr>
+	</thead>
+	<tbody id="the-list" data-wp-lists="list:meta">
+	<tr><td></td></tr>
+	</tbody>
+</table><p><strong>Add New Custom Field:</strong></p>
+<table id="newmeta">
+<thead>
+<tr>
+<th class="left"><label for="metakeyselect">Name</label></th>
+<th><label for="metavalue">Value</label></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td id="newmetaleft" class="left">
+<select id="metakeyselect" name="metakeyselect">
+<option value="#NONE#">&mdash; Select &mdash;</option>
+
+<option value='content_width'>content_width</option>
+<option value='custom_css_add'>custom_css_add</option>
+<option value='custom_css_preprocessor'>custom_css_preprocessor</option>
+<option value='jabber_published'>jabber_published</option>
+<option value='publicize_reach'>publicize_reach</option>
+<option value='publicize_twitter_user'>publicize_twitter_user</option>
+<option value='tagazine-media'>tagazine-media</option></select>
+<input class="hide-if-js" type="text" id="metakeyinput" name="metakeyinput" value="" />
+<a href="#postcustomstuff" class="hide-if-no-js" onclick="jQuery('#metakeyinput, #metakeyselect, #enternew, #cancelnew').toggle();return false;">
+<span id="enternew">Enter new</span>
+<span id="cancelnew" class="hidden">Cancel</span></a>
+</td>
+<td><textarea id="metavalue" name="metavalue" rows="2" cols="25"></textarea></td>
+</tr>
+
+<tr><td colspan="2">
+<div class="submit">
+<input type="submit" name="addmeta" id="newmeta-submit" class="button" value="Add Custom Field" data-wp-lists="add:the-list:newmeta"  /></div>
+<input type="hidden" id="_ajax_nonce-add-meta" name="_ajax_nonce-add-meta" value="9f39033d49" /></td></tr>
+</tbody>
+</table>
+</div>
+<p>Custom fields can be used to add extra metadata to a post that you can <a href="http://codex.wordpress.org/Using_Custom_Fields" target="_blank">use in your theme</a>.</p>
+</div>
+</div>
+<div id="commentstatusdiv" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Discussion</span></h3>
+<div class="inside">
+<input name="advanced_view" type="hidden" value="1" />
+<p class="meta-options">
+	<label for="comment_status" class="selectit"><input name="comment_status" type="checkbox" id="comment_status" value="open"  checked='checked' /> Allow comments.</label><br />
+	<label for="ping_status" class="selectit"><input name="ping_status" type="checkbox" id="ping_status" value="open"  checked='checked' /> Allow <a href="http://codex.wordpress.org/Introduction_to_Blogging#Managing_Comments" target="_blank">trackbacks and pingbacks</a> on this page.</label>
+	</p>
+</div>
+</div>
+<div id="slugdiv" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Slug</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="post_name">Slug</label><input name="post_name" type="text" size="13" id="post_name" value="" />
+</div>
+</div>
+<div id="authordiv" class="postbox  hide-if-js" >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Author</span></h3>
+<div class="inside">
+<label class="screen-reader-text" for="post_author_override">Author</label>
+<select name='post_author_override' id='post_author_override' class=''>
+	<option value='1' selected='selected'>gristech</option>
+</select></div>
+</div>
+</div><div id="advanced-sortables" class="meta-box-sortables"><div id="sharing_meta" class="postbox " >
+<div class="handlediv" title="Click to toggle"><br /></div><h3 class='hndle'><span>Sharing</span></h3>
+<div class="inside">
+
+	<p>
+		<label for="enable_post_sharing">
+			<input type="checkbox" name="enable_post_sharing" id="enable_post_sharing" value="1"  checked='checked'>
+			Show sharing buttons.		</label>
+		<input type="hidden" name="sharing_status_hidden" value="1" />
+	</p>
+
+	</div>
+</div>
+</div></div>
+</div><!-- /post-body -->
+<br class="clear" />
+</div><!-- /poststuff -->
+</form>
+</div>
+
+<form method="get" action="">
+<table style="display:none;"><tbody id="com-reply"><tr id="replyrow" style="display:none;"><td colspan="2" class="colspanchange">
+	<div id="replyhead" style="display:none;"><h5>Reply to Comment</h5></div>
+	<div id="addhead" style="display:none;"><h5>Add new Comment</h5></div>
+	<div id="edithead" style="display:none;">
+		<div class="inside">
+		<label for="author">Name</label>
+		<input type="text" name="newcomment_author" size="50" value="" id="author" />
+		</div>
+
+		<div class="inside">
+		<label for="author-email">E-mail</label>
+		<input type="text" name="newcomment_author_email" size="50" value="" id="author-email" />
+		</div>
+
+		<div class="inside">
+		<label for="author-url">URL</label>
+		<input type="text" id="author-url" name="newcomment_author_url" size="103" value="" />
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+
+	<div id="replycontainer">
+	<div id="wp-replycontent-wrap" class="wp-core-ui wp-editor-wrap html-active"><div id="wp-replycontent-editor-container" class="wp-editor-container"><textarea class="wp-editor-area" rows="20" cols="40" name="replycontent" id="replycontent"></textarea></div>
+</div>
+
+	</div>
+
+	<p id="replysubmit" class="submit">
+	<a href="#comments-form" class="save button-primary alignright">
+	<span id="addbtn" style="display:none;">Add Comment</span>
+	<span id="savebtn" style="display:none;">Update Comment</span>
+	<span id="replybtn" style="display:none;">Submit Reply</span></a>
+	<a href="#comments-form" class="cancel button-secondary alignleft">Cancel</a>
+	<span class="waiting spinner"></span>
+	<span class="error" style="display:none;"></span>
+	<br class="clear" />
+	</p>
+
+	<input type="hidden" name="user_ID" id="user_ID" value="1" />
+	<input type="hidden" name="action" id="action" value="" />
+	<input type="hidden" name="comment_ID" id="comment_ID" value="" />
+	<input type="hidden" name="comment_post_ID" id="comment_post_ID" value="" />
+	<input type="hidden" name="status" id="status" value="" />
+	<input type="hidden" name="position" id="position" value="1" />
+	<input type="hidden" name="checkbox" id="checkbox" value="0" />
+	<input type="hidden" name="mode" id="mode" value="single" />
+	<input type="hidden" id="_ajax_nonce-replyto-comment" name="_ajax_nonce-replyto-comment" value="d4dedfb07f" /><input type="hidden" id="_wp_unfiltered_html_comment" name="_wp_unfiltered_html_comment" value="ef56a1b4f5" /></td></tr></tbody></table>
+</form>
+
+<script type="text/javascript">
+try{document.post.title.focus();}catch(e){}
+</script>
+
+<div class="clear"></div></div><!-- wpbody-content -->
+<div class="clear"></div></div><!-- wpbody -->
+<div class="clear"></div></div><!-- wpcontent -->
+
+<div id="wpfooter">
+<p id="footer-left" class="alignleft"><span id="footer-thankyou">Thank you for creating with <a href="http://wordpress.org/">WordPress</a>.</span></p>
+<p id="footer-upgrade" class="alignright">Version 3.6</p>
+<div class="clear"></div>
+</div>
+	<div id="post-lock-dialog" class="notification-dialog-wrap hidden">
+	<div class="notification-dialog-background"></div>
+	<div class="notification-dialog">
+			<div class="post-taken-over">
+			<div class="post-locked-avatar"></div>
+			<p class="wp-tab-first" tabindex="0">
+			<span class="currently-editing"></span><br>
+			<span class="locked-saving hidden"><img src="images/wpspin_light-2x.gif" width="16" height="16" /> Saving revision...</span>
+			<span class="locked-saved hidden">Your latest changes were saved as a revision.</span>
+			</p>
+						<p><a class="button button-primary wp-tab-last" href="http://gristech.com/wp/wp-admin/edit.php">All Posts</a></p>
+		</div>
+			</div>
+	</div>
+		<script type="text/html" id="tmpl-media-frame">
+		<div class="media-frame-menu"></div>
+		<div class="media-frame-title"></div>
+		<div class="media-frame-router"></div>
+		<div class="media-frame-content"></div>
+		<div class="media-frame-toolbar"></div>
+		<div class="media-frame-uploader"></div>
+	</script>
+
+	<script type="text/html" id="tmpl-media-modal">
+		<div class="media-modal wp-core-ui">
+			<a class="media-modal-close" href="#" title="Close"><span class="media-modal-icon"></span></a>
+			<div class="media-modal-content"></div>
+		</div>
+		<div class="media-modal-backdrop"></div>
+	</script>
+
+	<script type="text/html" id="tmpl-uploader-window">
+		<div class="uploader-window-content">
+			<h3>Drop files to upload</h3>
+		</div>
+	</script>
+
+	<script type="text/html" id="tmpl-uploader-inline">
+		<# var messageClass = data.message ? 'has-upload-message' : 'no-upload-message'; #>
+		<div class="uploader-inline-content {{ messageClass }}">
+		<# if ( data.message ) { #>
+			<h3 class="upload-message">{{ data.message }}</h3>
+		<# } #>
+					<div class="upload-ui">
+				<h3 class="upload-instructions drop-instructions">Drop files anywhere to upload</h3>
+				<a href="#" class="browser button button-hero">Select Files</a>
+			</div>
+
+			<div class="upload-inline-status"></div>
+
+			<div class="post-upload-ui">
+				
+				<p class="max-upload-size">Maximum upload file size: 1MB.</p>
+
+				
+							</div>
+				</div>
+	</script>
+
+	<script type="text/html" id="tmpl-uploader-status">
+		<h3>Uploading</h3>
+		<a class="upload-dismiss-errors" href="#">Dismiss Errors</a>
+
+		<div class="media-progress-bar"><div></div></div>
+		<div class="upload-details">
+			<span class="upload-count">
+				<span class="upload-index"></span> / <span class="upload-total"></span>
+			</span>
+			<span class="upload-detail-separator">&ndash;</span>
+			<span class="upload-filename"></span>
+		</div>
+		<div class="upload-errors"></div>
+	</script>
+
+	<script type="text/html" id="tmpl-uploader-status-error">
+		<span class="upload-error-label">Error</span>
+		<span class="upload-error-filename">{{{ data.filename }}}</span>
+		<span class="upload-error-message">{{ data.message }}</span>
+	</script>
+
+	<script type="text/html" id="tmpl-attachment">
+		<div class="attachment-preview type-{{ data.type }} subtype-{{ data.subtype }} {{ data.orientation }}">
+			<# if ( data.uploading ) { #>
+				<div class="media-progress-bar"><div></div></div>
+			<# } else if ( 'image' === data.type ) { #>
+				<div class="thumbnail">
+					<div class="centered">
+						<img src="{{ data.size.url }}" draggable="false" />
+					</div>
+				</div>
+			<# } else { #>
+				<img src="{{ data.icon }}" class="icon" draggable="false" />
+				<div class="filename">
+					<div>{{ data.filename }}</div>
+				</div>
+			<# } #>
+
+			<# if ( data.buttons.close ) { #>
+				<a class="close media-modal-icon" href="#" title="Remove"></a>
+			<# } #>
+
+			<# if ( data.buttons.check ) { #>
+				<a class="check" href="#" title="Deselect"><div class="media-modal-icon"></div></a>
+			<# } #>
+		</div>
+		<#
+		var maybeReadOnly = data.can.save || data.allowLocalEdits ? '' : 'readonly';
+		if ( data.describe ) { #>
+			<# if ( 'image' === data.type ) { #>
+				<input type="text" value="{{ data.caption }}" class="describe" data-setting="caption"
+					placeholder="Caption this image&hellip;" {{ maybeReadOnly }} />
+			<# } else { #>
+				<input type="text" value="{{ data.title }}" class="describe" data-setting="title"
+					<# if ( 'video' === data.type ) { #>
+						placeholder="Describe this video&hellip;"
+					<# } else if ( 'audio' === data.type ) { #>
+						placeholder="Describe this audio file&hellip;"
+					<# } else { #>
+						placeholder="Describe this media file&hellip;"
+					<# } #> {{ maybeReadOnly }} />
+			<# } #>
+		<# } #>
+	</script>
+
+	<script type="text/html" id="tmpl-attachment-details">
+		<h3>
+			Attachment Details
+			<span class="settings-save-status">
+				<span class="spinner"></span>
+				<span class="saved">Saved.</span>
+			</span>
+		</h3>
+		<div class="attachment-info">
+			<div class="thumbnail">
+				<# if ( data.uploading ) { #>
+					<div class="media-progress-bar"><div></div></div>
+				<# } else if ( 'image' === data.type ) { #>
+					<img src="{{ data.size.url }}" draggable="false" />
+				<# } else { #>
+					<img src="{{ data.icon }}" class="icon" draggable="false" />
+				<# } #>
+			</div>
+			<div class="details">
+				<div class="filename">{{ data.filename }}</div>
+				<div class="uploaded">{{ data.dateFormatted }}</div>
+
+				<# if ( 'image' === data.type && ! data.uploading ) { #>
+					<# if ( data.width && data.height ) { #>
+						<div class="dimensions">{{ data.width }} &times; {{ data.height }}</div>
+					<# } #>
+
+					<# if ( data.can.save ) { #>
+						<a class="edit-attachment" href="{{ data.editLink }}&amp;image-editor" target="_blank">Edit Image</a>
+						<a class="refresh-attachment" href="#">Refresh</a>
+					<# } #>
+				<# } #>
+
+				<# if ( data.fileLength ) { #>
+					<div class="file-length">Length: {{ data.fileLength }}</div>
+				<# } #>
+
+				<# if ( ! data.uploading && data.can.remove ) { #>
+					<a class="delete-attachment" href="#">Delete Permanently</a>
+				<# } #>
+
+				<div class="compat-meta">
+					<# if ( data.compat && data.compat.meta ) { #>
+						{{{ data.compat.meta }}}
+					<# } #>
+				</div>
+			</div>
+		</div>
+
+		<# var maybeReadOnly = data.can.save || data.allowLocalEdits ? '' : 'readonly'; #>
+			<label class="setting" data-setting="title">
+				<span>Title</span>
+				<input type="text" value="{{ data.title }}" {{ maybeReadOnly }} />
+			</label>
+			<label class="setting" data-setting="caption">
+				<span>Caption</span>
+				<textarea {{ maybeReadOnly }}>{{ data.caption }}</textarea>
+			</label>
+		<# if ( 'image' === data.type ) { #>
+			<label class="setting" data-setting="alt">
+				<span>Alt Text</span>
+				<input type="text" value="{{ data.alt }}" {{ maybeReadOnly }} />
+			</label>
+		<# } #>
+			<label class="setting" data-setting="description">
+				<span>Description</span>
+				<textarea {{ maybeReadOnly }}>{{ data.description }}</textarea>
+			</label>
+	</script>
+
+	<script type="text/html" id="tmpl-media-selection">
+		<div class="selection-info">
+			<span class="count"></span>
+			<# if ( data.editable ) { #>
+				<a class="edit-selection" href="#">Edit</a>
+			<# } #>
+			<# if ( data.clearable ) { #>
+				<a class="clear-selection" href="#">Clear</a>
+			<# } #>
+		</div>
+		<div class="selection-view"></div>
+	</script>
+
+	<script type="text/html" id="tmpl-attachment-display-settings">
+		<h3>Attachment Display Settings</h3>
+
+		<# if ( 'image' === data.type ) { #>
+			<label class="setting">
+				<span>Alignment</span>
+				<select class="alignment"
+					data-setting="align"
+					<# if ( data.userSettings ) { #>
+						data-user-setting="align"
+					<# } #>>
+
+					<option value="left">
+						Left					</option>
+					<option value="center">
+						Center					</option>
+					<option value="right">
+						Right					</option>
+					<option value="none" selected>
+						None					</option>
+				</select>
+			</label>
+		<# } #>
+
+		<div class="setting">
+			<label>
+				<# if ( data.model.canEmbed ) { #>
+					<span>Embed or Link</span>
+				<# } else { #>
+					<span>Link To</span>
+				<# } #>
+
+				<select class="link-to"
+					data-setting="link"
+					<# if ( data.userSettings && ! data.model.canEmbed ) { #>
+						data-user-setting="urlbutton"
+					<# } #>>
+
+				<# if ( data.model.canEmbed ) { #>
+					<option value="embed" selected>
+						Embed Media Player					</option>
+					<option value="file">
+				<# } else { #>
+					<option value="file" selected>
+				<# } #>
+					<# if ( data.model.canEmbed ) { #>
+						Link to Media File					<# } else { #>
+						Media File					<# } #>
+					</option>
+					<option value="post">
+					<# if ( data.model.canEmbed ) { #>
+						Link to Attachment Page					<# } else { #>
+						Attachment Page					<# } #>
+					</option>
+				<# if ( 'image' === data.type ) { #>
+					<option value="custom">
+						Custom URL					</option>
+					<option value="none">
+						None					</option>
+				<# } #>
+				</select>
+			</label>
+			<input type="text" class="link-to-custom" data-setting="linkUrl" />
+		</div>
+
+		<# if ( 'undefined' !== typeof data.sizes ) { #>
+			<label class="setting">
+				<span>Size</span>
+				<select class="size" name="size"
+					data-setting="size"
+					<# if ( data.userSettings ) { #>
+						data-user-setting="imgsize"
+					<# } #>>
+											<#
+						var size = data.sizes['thumbnail'];
+						if ( size ) { #>
+							<option value="thumbnail" >
+								Thumbnail &ndash; {{ size.width }} &times; {{ size.height }}
+							</option>
+						<# } #>
+											<#
+						var size = data.sizes['medium'];
+						if ( size ) { #>
+							<option value="medium" >
+								Medium &ndash; {{ size.width }} &times; {{ size.height }}
+							</option>
+						<# } #>
+											<#
+						var size = data.sizes['large'];
+						if ( size ) { #>
+							<option value="large" >
+								Large &ndash; {{ size.width }} &times; {{ size.height }}
+							</option>
+						<# } #>
+											<#
+						var size = data.sizes['full'];
+						if ( size ) { #>
+							<option value="full"  selected='selected'>
+								Full Size &ndash; {{ size.width }} &times; {{ size.height }}
+							</option>
+						<# } #>
+									</select>
+			</label>
+		<# } #>
+	</script>
+
+	<script type="text/html" id="tmpl-gallery-settings">
+		<h3>Gallery Settings</h3>
+
+		<label class="setting">
+			<span>Link To</span>
+			<select class="link-to"
+				data-setting="link"
+				<# if ( data.userSettings ) { #>
+					data-user-setting="urlbutton"
+				<# } #>>
+
+				<option value="post" selected>
+					Attachment Page				</option>
+				<option value="file">
+					Media File				</option>
+				<option value="none">
+					None				</option>
+			</select>
+		</label>
+
+		<label class="setting">
+			<span>Columns</span>
+			<select class="columns" name="columns"
+				data-setting="columns">
+									<option value="1" >
+						1					</option>
+									<option value="2" >
+						2					</option>
+									<option value="3"  selected='selected'>
+						3					</option>
+									<option value="4" >
+						4					</option>
+									<option value="5" >
+						5					</option>
+									<option value="6" >
+						6					</option>
+									<option value="7" >
+						7					</option>
+									<option value="8" >
+						8					</option>
+									<option value="9" >
+						9					</option>
+							</select>
+		</label>
+
+		<label class="setting">
+			<span>Random Order</span>
+			<input type="checkbox" data-setting="_orderbyRandom" />
+		</label>
+	</script>
+
+	<script type="text/html" id="tmpl-embed-link-settings">
+		<label class="setting">
+			<span>Title</span>
+			<input type="text" class="alignment" data-setting="title" />
+		</label>
+	</script>
+
+	<script type="text/html" id="tmpl-embed-image-settings">
+		<div class="thumbnail">
+			<img src="{{ data.model.url }}" draggable="false" />
+		</div>
+
+					<label class="setting caption">
+				<span>Caption</span>
+				<textarea data-setting="caption" />
+			</label>
+		
+		<label class="setting alt-text">
+			<span>Alt Text</span>
+			<input type="text" data-setting="alt" />
+		</label>
+
+		<div class="setting align">
+			<span>Align</span>
+			<div class="button-group button-large" data-setting="align">
+				<button class="button" value="left">
+					Left				</button>
+				<button class="button" value="center">
+					Center				</button>
+				<button class="button" value="right">
+					Right				</button>
+				<button class="button active" value="none">
+					None				</button>
+			</div>
+		</div>
+
+		<div class="setting link-to">
+			<span>Link To</span>
+			<div class="button-group button-large" data-setting="link">
+				<button class="button" value="file">
+					Image URL				</button>
+				<button class="button" value="custom">
+					Custom URL				</button>
+				<button class="button active" value="none">
+					None				</button>
+			</div>
+			<input type="text" class="link-to-custom" data-setting="linkUrl" />
+		</div>
+	</script>
+
+	<script type="text/html" id="tmpl-attachments-css">
+		<style type="text/css" id="{{ data.id }}-css">
+			#{{ data.id }} {
+				padding: 0 {{ data.gutter }}px;
+			}
+
+			#{{ data.id }} .attachment {
+				margin: {{ data.gutter }}px;
+				width: {{ data.edge }}px;
+			}
+
+			#{{ data.id }} .attachment-preview,
+			#{{ data.id }} .attachment-preview .thumbnail {
+				width: {{ data.edge }}px;
+				height: {{ data.edge }}px;
+			}
+
+			#{{ data.id }} .portrait .thumbnail img {
+				max-width: {{ data.edge }}px;
+				height: auto;
+			}
+
+			#{{ data.id }} .landscape .thumbnail img {
+				width: auto;
+				max-height: {{ data.edge }}px;
+			}
+		</style>
+	</script>
+			<script type="text/html" id="tmpl-jetpack-gallery-settings">
+			<label class="setting">
+				<span>Type</span>
+				<select class="type" name="type" data-setting="type">
+											<option value="default"  selected='selected'>Thumbnail Grid</option>
+											<option value="slideshow" >Slideshow</option>
+									</select>
+			</label>
+		</script>
+			<div id="local-storage-notice" class="hidden">
+	<p class="local-restore">
+		The backup of this post in your browser is different from the version below.		<a class="restore-backup" href="#">Restore the backup.</a>
+	</p>
+	<p class="undo-restore hidden">
+		Post restored successfully.		<a class="undo-restore-backup" href="#">Undo.</a>
+	</p>
+	</div>
+	<script type='text/javascript'>list_args = {"class":"WP_Post_Comments_List_Table","screen":{"id":"post","base":"post"}};</script>
+	<div id="wp-auth-check-wrap" class="hidden">
+	<div id="wp-auth-check-bg"></div>
+	<div id="wp-auth-check">
+	<div class="wp-auth-check-close" tabindex="0" title="Close"></div>
+			<div id="wp-auth-check-form" data-src="http://gristech.com/wp/wp-login.php?interim-login=1"></div>
+			<div class="wp-auth-fallback">
+		<p><b class="wp-auth-fallback-expired" tabindex="0">Session expired</b></p>
+		<p><a href="http://gristech.com/wp/wp-login.php" target="_blank">Please log in again.</a>
+		The login page will open in a new window. After logging in you can close it and return to this page.</p>
+	</div>
+	</div>
+	</div>
+	<link rel='stylesheet' href='http://gristech.com/wp/wp-admin/load-styles.php?c=1&amp;dir=ltr&amp;load=wp-jquery-ui-dialog&amp;ver=3.6' type='text/css' media='all' />
+<link rel='stylesheet' id='wpcom-notes-admin-bar-css'  href='http://s0.wp.com/wp-content/mu-plugins/notes/admin-bar-v2.css?ver=2.3.5-201334' type='text/css' media='all' />
+<link rel='stylesheet' id='noticons-css'  href='http://s0.wp.com/i/noticons/noticons.css?ver=2.3.5-201334' type='text/css' media='all' />
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var commonL10n = {"warnDelete":"You are about to permanently delete the selected items.\n  'Cancel' to stop, 'OK' to delete."};var wpAjax = {"noPerm":"You do not have permission to do that.","broken":"An unidentified error has occurred."};var autosaveL10n = {"autosaveInterval":"60","savingText":"Saving Draft\u2026","saveAlert":"The changes you made will be lost if you navigate away from this page.","blog_id":"1"};var heartbeatSettings = {"nonce":"b096aaa14d"};var postL10n = {"ok":"OK","cancel":"Cancel","publishOn":"Publish on:","publishOnFuture":"Schedule for:","publishOnPast":"Published on:","dateFormat":"%1$s %2$s, %3$s @ %4$s : %5$s","showcomm":"Show more comments","endcomm":"No more comments found.","publish":"Publish","schedule":"Schedule","update":"Update","savePending":"Save as Pending","saveDraft":"Save Draft","private":"Private","public":"Public","publicSticky":"Public, Sticky","password":"Password Protected","privatelyPublished":"Privately Published","published":"Published","comma":","};var thickboxL10n = {"next":"Next >","prev":"< Prev","image":"Image","of":"of","close":"Close","noiframes":"This feature requires inline frames. You have iframes disabled or your browser does not support them.","loadingAnimation":"http:\/\/gristech.com\/wp\/wp-includes\/js\/thickbox\/loadingAnimation.gif","closeImage":"http:\/\/gristech.com\/wp\/wp-includes\/js\/thickbox\/tb-close.png"};var authcheckL10n = {"beforeunload":"Your session has expired. You can log in again from this page or go to the login page.","interval":"180"};var wordCountL10n = {"type":"w"};var wpLinkL10n = {"title":"Insert\/edit link","update":"Update","save":"Add Link","noTitle":"(no title)","noMatchesFound":"No matches found."};/* ]]> */
+</script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-admin/load-scripts.php?c=1&amp;load%5B%5D=hoverIntent,common,admin-bar,schedule,wp-ajax-response,autosave,suggest,jquery-color,wp-lists,postbox,heartbeat,post,thickbox,sh&amp;load%5B%5D=ortcode,media-editor,wp-auth-check,word-count,editor,jquery-ui-resizable,jquery-ui-draggable,jquery-ui-button,jquery-ui-position&amp;load%5B%5D=,jquery-ui-dialog,wpdialogs,wplink,wpdialogs-popup,wp-fullscreen,media-upload&amp;ver=3.6'></script>
+<script type='text/javascript' src='//platform.twitter.com/widgets.js?ver=3.6'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201334'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/js/mustache.js?ver=2.3.5-201334'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/_inc/spin.js?ver=1.3'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-content/plugins/jetpack/_inc/jquery.spin.js?ver=1.3'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/notes/notes-common-v2.js?ver=2.3.5-201334'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/mu-plugins/notes/admin-bar-v2.js?ver=2.3.5-201334'></script>
+
+	<script type="text/javascript">
+		tinyMCEPreInit = {
+			base : "http://gristech.com/wp/wp-includes/js/tinymce",
+			suffix : "",
+			query : "ver=358-24485",
+			mceInit : {'content':{mode:"exact",width:"100%",theme:"advanced",skin:"wp_theme",language:"en",theme_advanced_toolbar_location:"top",theme_advanced_toolbar_align:"left",theme_advanced_statusbar_location:"bottom",theme_advanced_resizing:true,theme_advanced_resize_horizontal:false,dialog_type:"modal",formats:{
+						alignleft : [
+							{selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles : {textAlign : 'left'}},
+							{selector : 'img,table', classes : 'alignleft'}
+						],
+						aligncenter : [
+							{selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles : {textAlign : 'center'}},
+							{selector : 'img,table', classes : 'aligncenter'}
+						],
+						alignright : [
+							{selector : 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles : {textAlign : 'right'}},
+							{selector : 'img,table', classes : 'alignright'}
+						],
+						strikethrough : {inline : 'del'}
+					},relative_urls:false,remove_script_host:false,convert_urls:false,remove_linebreaks:true,gecko_spellcheck:"false",fix_list_elements:true,keep_styles:false,entities:"38,amp,60,lt,62,gt",accessibility_focus:true,media_strict:false,paste_remove_styles:true,paste_remove_spans:true,paste_strip_class_attributes:"all",paste_text_use_dialog:true,webkit_fake_resize:false,preview_styles:"font-family font-weight text-decoration text-transform",schema:"html5",wpeditimage_disable_captions:false,wp_fullscreen_content_css:"http://gristech.com/wp/wp-includes/js/tinymce/plugins/wpfullscreen/css/wp-fullscreen.css",plugins:"inlinepopups,tabfocus,paste,media,fullscreen,wordpress,wpeditimage,wpgallery,wplink,wpdialogs,-AtD,wpfullscreen",content_css:"//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&subset=latin%2Clatin-ext,http://gristech.com/wp/wp-content/themes/twentythirteen/css/editor-style.css,http://gristech.com/wp/wp-content/themes/twentythirteen/fonts/genericons.css",elements:"content",wpautop:true,apply_source_formatting:false,theme_advanced_buttons1:"bold,italic,strikethrough,bullist,numlist,blockquote,justifyleft,justifycenter,justifyright,link,unlink,wp_more,AtD,wp_fullscreen,wp_adv",theme_advanced_buttons2:"formatselect,underline,justifyfull,forecolor,pastetext,pasteword,removeformat,charmap,outdent,indent,undo,redo,wp_help",theme_advanced_buttons3:"",theme_advanced_buttons4:"",tabfocus_elements:"insert-media-button,save-post",body_class:"content post-type-post post-status-auto-draft post-format-standard",theme_advanced_resizing_use_cookie:false,atd_rpc_url:"http://gristech.com/wp/wp-admin/admin-ajax.php?action=proxy_atd&url=",atd_ignore_rpc_url:"http://gristech.com/wp/wp-admin/admin-ajax.php?action=atd_ignore&phrase=",atd_rpc_id:"WPORG-98bf1f4f1cbca9db082ca173f7851743",atd_theme:"wordpress",atd_ignore_enable:"true",atd_strip_on_get:"true",atd_ignore_strings:[""],atd_show_types:""}},
+			qtInit : {'content':{id:"content",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,more,close,fullscreen"},'replycontent':{id:"replycontent",buttons:"strong,em,link,block,del,ins,img,ul,ol,li,code,close"}},
+			ref : {plugins:"inlinepopups,tabfocus,paste,media,fullscreen,wordpress,wpeditimage,wpgallery,wplink,wpdialogs,-AtD,wpfullscreen",theme:"advanced",language:"en"},
+			load_ext : function(url,lang){var sl=tinymce.ScriptLoader;sl.markDone(url+'/langs/'+lang+'.js');sl.markDone(url+'/langs/'+lang+'_dlg.js');}
+		};
+	</script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-includes/js/tinymce/wp-tinymce.php?c=1&amp;ver=358-24485'></script>
+<script type='text/javascript' src='http://gristech.com/wp/wp-includes/js/tinymce/langs/wp-langs-en.js?ver=358-24485'></script>
+
+	<script type="text/javascript">
+		var wpActiveEditor;
+
+		(function(){
+			var init, ed, qt, first_init, DOM, el, i, mce = 1;
+
+			if ( typeof(tinymce) == 'object' ) {
+				DOM = tinymce.DOM;
+				// mark wp_theme/ui.css as loaded
+				DOM.files[tinymce.baseURI.getURI() + '/themes/advanced/skins/wp_theme/ui.css'] = true;
+
+				DOM.events.add( DOM.select('.wp-editor-wrap'), 'mousedown', function(e){
+					if ( this.id )
+						wpActiveEditor = this.id.slice(3, -5);
+				});
+
+				for ( ed in tinyMCEPreInit.mceInit ) {
+					if ( first_init ) {
+						init = tinyMCEPreInit.mceInit[ed] = tinymce.extend( {}, first_init, tinyMCEPreInit.mceInit[ed] );
+					} else {
+						init = first_init = tinyMCEPreInit.mceInit[ed];
+					}
+
+					if ( mce )
+						try { tinymce.init(init); } catch(e){}
+				}
+			} else {
+				if ( tinyMCEPreInit.qtInit ) {
+					for ( i in tinyMCEPreInit.qtInit ) {
+						el = tinyMCEPreInit.qtInit[i].id;
+						if ( el )
+							document.getElementById('wp-'+el+'-wrap').onmousedown = function(){ wpActiveEditor = this.id.slice(3, -5); }
+					}
+				}
+			}
+
+			if ( typeof(QTags) == 'function' ) {
+				for ( qt in tinyMCEPreInit.qtInit ) {
+					try { quicktags( tinyMCEPreInit.qtInit[qt] ); } catch(e){}
+				}
+			}
+		})();
+		tinyMCEPreInit.load_ext("http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/tinymce", "en");
+tinymce.PluginManager.load("AtD", "http://gristech.com/wp/wp-content/plugins/jetpack/modules/after-the-deadline/tinymce/editor_plugin.js?v=20120221");
+
+		</script>
+			<div style="display:none;">
+	<form id="wp-link" tabindex="-1">
+	<input type="hidden" id="_ajax_linking_nonce" name="_ajax_linking_nonce" value="6b8d7580d5" />	<div id="link-selector">
+		<div id="link-options">
+			<p class="howto">Enter the destination URL</p>
+			<div>
+				<label><span>URL</span><input id="url-field" type="text" name="href" /></label>
+			</div>
+			<div>
+				<label><span>Title</span><input id="link-title-field" type="text" name="linktitle" /></label>
+			</div>
+			<div class="link-target">
+				<label><input type="checkbox" id="link-target-checkbox" /> Open link in a new window/tab</label>
+			</div>
+		</div>
+				<p class="howto toggle-arrow " id="internal-toggle">Or link to existing content</p>
+		<div id="search-panel" style="display:none">
+			<div class="link-search-wrapper">
+				<label>
+					<span class="search-label">Search</span>
+					<input type="search" id="search-field" class="link-search-field" autocomplete="off" />
+					<span class="spinner"></span>
+				</label>
+			</div>
+			<div id="search-results" class="query-results">
+				<ul></ul>
+				<div class="river-waiting">
+					<span class="spinner"></span>
+				</div>
+			</div>
+			<div id="most-recent-results" class="query-results">
+				<div class="query-notice"><em>No search term specified. Showing recent items.</em></div>
+				<ul></ul>
+				<div class="river-waiting">
+					<span class="spinner"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="submitbox">
+		<div id="wp-link-update">
+			<input type="submit" value="Add Link" class="button-primary" id="wp-link-submit" name="wp-link-submit">
+		</div>
+		<div id="wp-link-cancel">
+			<a class="submitdelete deletion" href="#">Cancel</a>
+		</div>
+	</div>
+	</form>
+	</div>
+		<div id="wp-fullscreen-body">
+	<div id="fullscreen-topbar">
+		<div id="wp-fullscreen-toolbar">
+			<div id="wp-fullscreen-close"><a href="#" onclick="fullscreen.off();return false;">Exit fullscreen</a></div>
+			<div id="wp-fullscreen-central-toolbar" style="width:626px;">
+
+			<div id="wp-fullscreen-mode-bar"><div id="wp-fullscreen-modes">
+				<a href="#" onclick="fullscreen.switchmode('tinymce');return false;">Visual</a>
+				<a href="#" onclick="fullscreen.switchmode('html');return false;">Text</a>
+			</div></div>
+
+			<div id="wp-fullscreen-button-bar"><div id="wp-fullscreen-buttons" class="wp_themeSkin">
+	
+			<div>
+			<a title="Bold (Ctrl + B)" onclick="fullscreen.b();return false;" class="mceButton mceButtonEnabled mce_bold" href="#" id="wp_fs_bold" role="button" aria-pressed="false">
+			<span class="mceIcon mce_bold"></span>
+			</a>
+			</div>
+	
+			<div>
+			<a title="Italic (Ctrl + I)" onclick="fullscreen.i();return false;" class="mceButton mceButtonEnabled mce_italic" href="#" id="wp_fs_italic" role="button" aria-pressed="false">
+			<span class="mceIcon mce_italic"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div>
+			<a title="Unordered list (Alt + Shift + U)" onclick="fullscreen.ul();return false;" class="mceButton mceButtonEnabled mce_bullist" href="#" id="wp_fs_bullist" role="button" aria-pressed="false">
+			<span class="mceIcon mce_bullist"></span>
+			</a>
+			</div>
+	
+			<div>
+			<a title="Ordered list (Alt + Shift + O)" onclick="fullscreen.ol();return false;" class="mceButton mceButtonEnabled mce_numlist" href="#" id="wp_fs_numlist" role="button" aria-pressed="false">
+			<span class="mceIcon mce_numlist"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div>
+			<a title="Blockquote (Alt + Shift + Q)" onclick="fullscreen.blockquote();return false;" class="mceButton mceButtonEnabled mce_blockquote" href="#" id="wp_fs_blockquote" role="button" aria-pressed="false">
+			<span class="mceIcon mce_blockquote"></span>
+			</a>
+			</div>
+	
+			<div class="wp-fullscreen-both">
+			<a title="Insert/edit image (Alt + Shift + M)" onclick="fullscreen.medialib();return false;" class="mceButton mceButtonEnabled mce_image" href="#" id="wp_fs_image" role="button" aria-pressed="false">
+			<span class="mceIcon mce_image"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div class="wp-fullscreen-both">
+			<a title="Insert/edit link (Alt + Shift + A)" onclick="fullscreen.link();return false;" class="mceButton mceButtonEnabled mce_link" href="#" id="wp_fs_link" role="button" aria-pressed="false">
+			<span class="mceIcon mce_link"></span>
+			</a>
+			</div>
+	
+			<div>
+			<a title="Unlink (Alt + Shift + S)" onclick="fullscreen.unlink();return false;" class="mceButton mceButtonEnabled mce_unlink" href="#" id="wp_fs_unlink" role="button" aria-pressed="false">
+			<span class="mceIcon mce_unlink"></span>
+			</a>
+			</div>
+					<div><span aria-orientation="vertical" role="separator" class="mceSeparator"></span></div>
+	
+			<div>
+			<a title="Help (Alt + Shift + H)" onclick="fullscreen.help();return false;" class="mceButton mceButtonEnabled mce_help" href="#" id="wp_fs_help" role="button" aria-pressed="false">
+			<span class="mceIcon mce_help"></span>
+			</a>
+			</div>
+	
+			<div>
+			<a title="Proofread Writing" onclick="tinyMCE.execCommand('mceWritingImprovementTool');return false;" class="mceButton mceButtonEnabled mce_spellchecker" href="#" id="wp_fs_spellchecker" role="button" aria-pressed="false">
+			<span class="mceIcon mce_spellchecker"></span>
+			</a>
+			</div>
+	
+			</div></div>
+
+			<div id="wp-fullscreen-save">
+				<input type="button" class="button-primary right" value="Save" onclick="fullscreen.save();" />
+				<span class="spinner"></span>
+				<span class="fs-saved">Saved.</span>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="wp-fullscreen-wrap" style="width:626px;">
+				<label id="wp-fullscreen-title-prompt-text" for="wp-fullscreen-title">Enter title here</label>
+		<input type="text" id="wp-fullscreen-title" value="" autocomplete="off" />
+		
+		<div id="wp-fullscreen-container">
+			<textarea id="wp_mce_fullscreen"></textarea>
+		</div>
+
+		<div id="wp-fullscreen-status">
+			<div id="wp-fullscreen-count">Word count: <span class="word-count">0</span></div>
+			<div id="wp-fullscreen-tagline">Just write.</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="fullscreen-overlay" id="fullscreen-overlay"></div>
+	<div class="fullscreen-overlay fullscreen-fader fade-600" id="fullscreen-fader"></div>
+	
+<div class="clear"></div></div><!-- wpwrap -->
+<script type="text/javascript">if(typeof wpOnload=='function')wpOnload();</script>
+</body>
+</html>
