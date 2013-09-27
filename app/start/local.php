@@ -1,3 +1,0 @@
-<?php
-
- //letter to chris:
